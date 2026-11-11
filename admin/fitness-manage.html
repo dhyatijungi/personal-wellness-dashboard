@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Workout Library | VitalityPulse Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- Sidebar Navigation -->
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo-badge">🌿</div>
+      <div class="admin-brand-title">
+        VitalityPulse
+        <span>Administrator</span>
+      </div>
+    </div>
+
+    <div class="admin-nav-group">
+      <div class="nav-category">Main Controls</div>
+      <nav class="admin-nav-links">
+        <a href="index.html" class="admin-nav-item">
+          <span class="icon">📊</span> Dashboard Overview
+        </a>
+        <a href="users.html" class="admin-nav-item">
+          <span class="icon">👥</span> User Management
+          <span class="admin-badge-count">1,248</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Content Modules</div>
+      <nav class="admin-nav-links">
+        <a href="nutrition-manage.html" class="admin-nav-item">
+          <span class="icon">🥗</span> Nutrition & Meals
+          <span class="admin-badge-count">48</span>
+        </a>
+        <a href="fitness-manage.html" class="admin-nav-item active">
+          <span class="icon">⚡</span> Fitness Library
+          <span class="admin-badge-count">32</span>
+        </a>
+        <a href="tips-manage.html" class="admin-nav-item">
+          <span class="icon">📝</span> Health Articles
+          <span class="admin-badge-count">24</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Community & Support</div>
+      <nav class="admin-nav-links">
+        <a href="feedback.html" class="admin-nav-item">
+          <span class="icon">💬</span> User Inquiries
+          <span class="admin-badge-count" style="background-color: #ef4444; color: #fff;">5</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="admin-sidebar-footer">
+      <div class="admin-avatar">AD</div>
+      <div class="admin-info">
+        <div class="admin-name">Admin Control</div>
+        <div class="admin-role">System Lead (Web Tech)</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <h1 class="admin-page-title">Fitness Routines & Exercise Database</h1>
+      </div>
+
+      <div class="topbar-right">
+        <div class="admin-search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="Search workouts, muscle groups...">
+        </div>
+        <a href="../fitness.html" class="view-client-btn">
+          <span>🌐</span> View Fitness Page
+        </a>
+      </div>
+    </header>
+
+    <main class="admin-container">
+      <!-- KPI Row -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Workout Programs</span>
+            <div class="kpi-icon" style="background:#ffe4e6; color:#be123c;">⚡</div>
+          </div>
+          <div class="kpi-value">32</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Calisthenics, HIIT, Mobility</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Total Logs This Week</span>
+            <div class="kpi-icon" style="background:#ecfdf5; color:#059669;">📈</div>
+          </div>
+          <div class="kpi-value">3,410</div>
+          <div style="font-size: 0.8rem; color: #059669;">+8.1% vs last week</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Avg Workout Duration</span>
+            <div class="kpi-icon" style="background:#dbeafe; color:#2563eb;">⏱️</div>
+          </div>
+          <div class="kpi-value">22 Mins</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Optimized micro-sessions</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Equipment Demand</span>
+            <div class="kpi-icon" style="background:#ede9fe; color:#7c3aed;">🧘</div>
+          </div>
+          <div class="kpi-value">85% Zero</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Requires only bodyweight</div>
+        </div>
+      </section>
+
+      <!-- Fitness Catalog Table -->
+      <section class="table-card">
+        <div class="table-header-bar">
+          <div>
+            <h3 class="table-title">Exercise Library & Program Database</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Configure difficulty ratings, targeted physiological systems, and reps</p>
+          </div>
+          <div class="table-actions">
+            <a href="#add-workout-modal" class="btn btn-primary btn-sm">+ Add New Workout</a>
+          </div>
+        </div>
+
+        <div class="responsive-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Workout Title</th>
+                <th>Target Muscle Focus</th>
+                <th>Intensity Level</th>
+                <th>Duration</th>
+                <th>Est. Burn</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Sunrise Yoga & Spinal Mobility</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Cat-cow, downward dog, cobra stretch</div>
+                </td>
+                <td>Spine, Hips & Core</td>
+                <td><span class="badge badge-purple">Low Intensity</span></td>
+                <td>18 Mins</td>
+                <td>95 kcal</td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>20-Min Tabata High-Intensity Burn</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Burpees, jump squats, high knees</div>
+                </td>
+                <td>Cardiovascular & VO2 Max</td>
+                <td><span class="badge badge-rose">High Intensity (HIIT)</span></td>
+                <td>20 Mins</td>
+                <td>260 kcal</td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Bodyweight Strength Calisthenics</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Pushups, tempo squats, lunges, planks</div>
+                </td>
+                <td>Upper & Lower Body</td>
+                <td><span class="badge badge-amber">Moderate Strength</span></td>
+                <td>30 Mins</td>
+                <td>210 kcal</td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Desk Break: 8-Min Posture Reset</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Chin tucks, thoracic openers, wrist stretches</div>
+                </td>
+                <td>Neck, Trapezius & Posture</td>
+                <td><span class="badge badge-blue">Restorative</span></td>
+                <td>8 Mins</td>
+                <td>40 kcal</td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Core Stability & Isometric Holds</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Side planks, hollow body holds, bird-dogs</div>
+                </td>
+                <td>Deep Transverse Abdominis</td>
+                <td><span class="badge badge-amber">Moderate</span></td>
+                <td>15 Mins</td>
+                <td>115 kcal</td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Deep Tissue Foam Roller Flow</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Myofascial release for quads, calves, and IT band</div>
+                </td>
+                <td>Myofascial Recovery</td>
+                <td><span class="badge badge-blue">Low Intensity</span></td>
+                <td>12 Mins</td>
+                <td>50 kcal</td>
+                <td><span class="badge" style="background:#f1f5f9; color:#64748b;">Draft</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination-bar">
+          <span>Showing 6 of 32 routines</span>
+          <div class="pagination-controls">
+            <span class="page-num active">1</span>
+            <span class="page-num">2</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Pure CSS Modal Dialog for Adding a Workout (Targeted via #add-workout-modal) -->
+  <div id="add-workout-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">+ Add New Workout Program</h3>
+        <a href="#" class="modal-close-btn" title="Close modal">&times;</a>
+      </div>
+
+      <form action="fitness-manage.html" method="get">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Workout Title *</label>
+            <input type="text" class="form-control" placeholder="e.g. 15-Min Express Core Blast" required>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Intensity Level</label>
+              <select class="form-control">
+                <option>Low Intensity / Mobility</option>
+                <option>Moderate Strength</option>
+                <option>High Intensity (HIIT)</option>
+                <option>Restorative Posture</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Duration (Minutes)</label>
+              <input type="number" class="form-control" placeholder="e.g. 20" required>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Target Muscle Focus</label>
+              <input type="text" class="form-control" placeholder="e.g. Core & Glutes">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Est. Calories Burned (kcal)</label>
+              <input type="number" class="form-control" placeholder="e.g. 180">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Equipment Required</label>
+            <input type="text" class="form-control" placeholder="None / Yoga Mat / Resistance Band">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Exercise Sequence Details</label>
+            <textarea class="form-control" placeholder="List exercises, reps, sets, and rest intervals..." rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline btn-sm">Cancel</a>
+          <button type="submit" class="btn btn-primary btn-sm">Publish Routine</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Wellness & Sleep | Personal Wellness Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/client.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon">🌿</div>
+        <div>Vitality<span>Pulse</span></div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+          <li><a href="fitness.html" class="nav-link">Fitness</a></li>
+          <li><a href="wellness.html" class="nav-link active">Mental Wellness</a></li>
+          <li><a href="planner.html" class="nav-link">Daily Planner</a></li>
+          <li><a href="contact.html" class="nav-link">FAQ & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="admin/tips-manage.html" class="admin-switch-btn" title="Manage Wellness Content">
+          <span>⚙️</span> Admin Portal
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Wellness & Sleep Hero -->
+    <section class="wellness-hero">
+      <div class="container">
+        <div style="max-width: 720px;">
+          <span class="section-tag" style="background-color: #ede9fe; color: #6d28d9;">Mind & Circadian Health</span>
+          <h1 style="font-size: 2.5rem; font-weight: 800; color: #1e293b; margin: 0.5rem 0 1rem;">
+            Restore Inner Harmony with <span style="color: #7c3aed;">Mindfulness & Deep Sleep</span>
+          </h1>
+          <p style="color: #64748b; font-size: 1.05rem;">
+            True wellness transcends physical movement—it thrives when the nervous system downshifts into parasympathetic rest.
+            Master diaphragmatic breathing, restore circadian harmony, and overcome cognitive burnout.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guided Breathing Bubble Widget (Pure CSS Animated Component) -->
+    <section class="container" style="padding: 3.5rem 1.5rem 2rem;">
+      <div class="breathing-box">
+        <span class="badge badge-purple" style="font-size: 0.85rem; padding: 0.35rem 1rem;">4-4-4 Box Breathing Technique</span>
+        <h2 style="font-size: 2rem; font-weight: 800; margin: 1rem 0 0.5rem;">Visual Breath Pacer</h2>
+        <p style="color: var(--text-muted); max-width: 580px; margin: 0 auto;">
+          Follow the pulsating sphere: Inhale deeply as it expands, hold your lungs comfortably at the peak, and exhale slowly as it gently compresses.
+        </p>
+
+        <div class="breathing-circle-wrapper">
+          <div class="breathing-circle">
+            <span>Breathe</span>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
+          <div style="background: #f8fafc; padding: 0.65rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <strong style="color: #7c3aed;">Inhale:</strong> 4 Seconds
+          </div>
+          <div style="background: #f8fafc; padding: 0.65rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <strong style="color: #7c3aed;">Hold:</strong> 4 Seconds
+          </div>
+          <div style="background: #f8fafc; padding: 0.65rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <strong style="color: #7c3aed;">Exhale:</strong> 4 Seconds
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Circadian Rhythm & Sleep Cycle Architecture -->
+    <section class="container" style="padding-bottom: 3.5rem;">
+      <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+        <span class="section-tag">Circadian Science</span>
+        <h2 style="font-size: 1.8rem; font-weight: 800;">The 90-Minute Sleep Cycle Matrix</h2>
+        <p style="color: var(--text-muted);">
+          Human sleep is governed by ultradian cycles lasting approximately 90 minutes. Waking at the end of a cycle eliminates morning sleep inertia.
+        </p>
+      </div>
+
+      <div class="sleep-cycles-grid">
+        <div class="sleep-card" style="border-top: 4px solid #3b82f6;">
+          <span class="badge badge-blue">Stage 1 & 2</span>
+          <h3 style="margin: 0.75rem 0 0.5rem; font-size: 1.2rem;">Light Sleep (NREM)</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Heart rate slows and core body temperature drops. Muscle relaxation begins, transitioning the nervous system away from active daytime beta waves.
+          </p>
+          <div style="margin-top: 1rem; font-weight: 700; font-size: 0.85rem; color: #2563eb;">50% of Total Sleep Time</div>
+        </div>
+
+        <div class="sleep-card" style="border-top: 4px solid #10b981;">
+          <span class="badge badge-green">Stage 3</span>
+          <h3 style="margin: 0.75rem 0 0.5rem; font-size: 1.2rem;">Slow-Wave Deep Sleep</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            The most restorative phase. Human growth hormone releases, tissues repair, cellular waste clears via the glymphatic system, and immune memory consolidates.
+          </p>
+          <div style="margin-top: 1rem; font-weight: 700; font-size: 0.85rem; color: #059669;">20-25% of Total Sleep Time</div>
+        </div>
+
+        <div class="sleep-card" style="border-top: 4px solid #8b5cf6;">
+          <span class="badge badge-purple">Stage 4</span>
+          <h3 style="margin: 0.75rem 0 0.5rem; font-size: 1.2rem;">REM (Rapid Eye Movement)</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+            Vivid dreams and cognitive consolidation. The brain synthesizes emotional experiences, problem-solving memory traces, and neuroplastic pathways.
+          </p>
+          <div style="margin-top: 1rem; font-weight: 700; font-size: 0.85rem; color: #7c3aed;">20-25% of Total Sleep Time</div>
+        </div>
+      </div>
+
+      <!-- Sleep Calculator Helper Table -->
+      <div class="card" style="margin-top: 2rem; background: #ffffff;">
+        <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Optimal Wake Times If You Sleep at 10:30 PM</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          Allowing 15 minutes of average sleep latency (time to fall asleep):
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 180px; padding: 1rem; border-radius: var(--radius-md); background: #f8fafc; border: 1px solid var(--border-color);">
+            <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted);">4 Cycles (6.0 hrs)</div>
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-dark); margin: 0.25rem 0;">4:45 AM</div>
+            <span class="badge badge-amber">Minimum Rest</span>
+          </div>
+          <div style="flex: 1; min-width: 180px; padding: 1rem; border-radius: var(--radius-md); background: #ecfdf5; border: 1px solid #a7f3d0;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #047857;">5 Cycles (7.5 hrs)</div>
+            <div style="font-size: 1.5rem; font-weight: 800; color: #065f46; margin: 0.25rem 0;">6:15 AM</div>
+            <span class="badge badge-green">Recommended</span>
+          </div>
+          <div style="flex: 1; min-width: 180px; padding: 1rem; border-radius: var(--radius-md); background: #ede9fe; border: 1px solid #ddd6fe;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #6d28d9;">6 Cycles (9.0 hrs)</div>
+            <div style="font-size: 1.5rem; font-weight: 800; color: #5b21b6; margin: 0.25rem 0;">7:45 AM</div>
+            <span class="badge badge-purple">Athletic Recovery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mindfulness Grounding Techniques -->
+    <section class="container" style="padding-bottom: 5rem;">
+      <div class="card" style="background: linear-gradient(135deg, #f8fafc, #eff6ff);">
+        <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 1rem;">The 5-4-3-2-1 Sensory Grounding Reset</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+          When mental stress or anxiety surges during exam or work pressure, reconnect to physical reality using your five senses:
+        </p>
+        <div class="grid-3" style="gap: 1rem;">
+          <div style="background: #ffffff; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <strong style="color: #3b82f6;">👀 5 Things You See:</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">Spot the grain on your desk, sunlight on the wall, or a distant cloud.</p>
+          </div>
+          <div style="background: #ffffff; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <strong style="color: #10b981;">✋ 4 Things You Feel:</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">The texture of your shirt, the cool metal of a pen, your feet grounded.</p>
+          </div>
+          <div style="background: #ffffff; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <strong style="color: #f59e0b;">👂 3 Things You Hear:</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">A computer fan hum, distant traffic murmurs, or your steady breath.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #ffffff;">
+            <div class="logo-icon">🌿</div>
+            <div>Vitality<span>Pulse</span></div>
+          </div>
+          <p>
+            Promoting holistic mental health, diaphragmatic breath regulation, and restorative circadian sleep practices.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Sections</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="nutrition.html">Nutrition & Diets</a></li>
+            <li><a href="fitness.html">Fitness & Workouts</a></li>
+            <li><a href="wellness.html">Mental Wellness & Sleep</a></li>
+            <li><a href="planner.html">Daily Planner & Goals</a></li>
+            <li><a href="contact.html">FAQ & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admin Portal</h4>
+          <ul class="footer-links">
+            <li><a href="admin/index.html">Admin Dashboard</a></li>
+            <li><a href="admin/tips-manage.html">Manage Articles & Tips</a></li>
+            <li><a href="admin/nutrition-manage.html">Manage Nutrition</a></li>
+            <li><a href="admin/users.html">User Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mindfulness Notice</h4>
+          <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.6;">
+            If experiencing clinical anxiety or insomnia, please seek professional healthcare support.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Personal Wellness Dashboard. Responsive Web Technology Project.</p>
+        <p><a href="admin/tips-manage.html" style="color: var(--primary);">Go to Admin Health Articles →</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

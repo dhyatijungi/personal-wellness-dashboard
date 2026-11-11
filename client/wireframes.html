@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Wellness Dashboard | UI Wireframe Mockups</title>
+  <link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+
+  <div class="wireframe-container">
+    <div class="wf-doc-header">
+      <h1>Personal Wellness Dashboard — UI Wireframes</h1>
+      <p>Subject: Web Technology | High-Contrast Geometric Box Layouts (5 Admin Side + 5 Client Side)</p>
+      <div class="wf-page-nav">
+        <a href="#admin-1" class="wf-page-btn">Admin 1: Add Recipe</a>
+        <a href="#admin-2" class="wf-page-btn">Admin 2: Dashboard</a>
+        <a href="#admin-3" class="wf-page-btn">Admin 3: Add Workout</a>
+        <a href="#admin-4" class="wf-page-btn">Admin 4: Users</a>
+        <a href="#admin-5" class="wf-page-btn">Admin 5: Health Tips</a>
+        <a href="#client-1" class="wf-page-btn">Client 1: Home</a>
+        <a href="#client-2" class="wf-page-btn">Client 2: Nutrition</a>
+        <a href="#client-3" class="wf-page-btn">Client 3: Fitness</a>
+        <a href="#client-4" class="wf-page-btn">Client 4: Mental Wellness</a>
+        <a href="#client-5" class="wf-page-btn">Client 5: Daily Planner</a>
+      </div>
+    </div>
+
+    <!-- ==================================================================== -->
+    <!-- 1. ADMIN SIDE WIREFRAME 1: ADD NEW RECIPE (Exact Replica of Sample) -->
+    <!-- ==================================================================== -->
+    <div id="admin-1" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/admin/add-recipe</div>
+      </div>
+
+      <div class="wf-main-box">
+        <!-- Left Sidebar Stack of Boxes -->
+        <div class="wf-admin-side-boxes">
+          <div class="wf-box-admin-title">ADMIN PANEL</div>
+          <div class="wf-box-menu-item">Dashboard</div>
+          <div class="wf-box-menu-item">Manage Recipes</div>
+          <div class="wf-box-menu-item active">Add Recipe</div>
+          <div class="wf-box-menu-item">Workout Library</div>
+          <div class="wf-box-menu-item">Manage Users</div>
+          <div class="wf-box-menu-item">Health Articles</div>
+          <div class="wf-box-menu-item">Settings</div>
+        </div>
+
+        <!-- Right Main Box Content -->
+        <div class="wf-admin-right-boxes">
+          <!-- Heading Box -->
+          <div class="wf-heading-box">
+            <h2>ADD NEW RECIPE</h2>
+            <p>Create a new wellness meal recommendation.</p>
+          </div>
+
+          <!-- Form Main Box -->
+          <div class="wf-form-main-box">
+            <div>
+              <label class="wf-field-label">Recipe Name</label>
+              <div class="wf-input-box-single">Enter recipe name</div>
+            </div>
+
+            <!-- 3 Tall Sub-Boxes -->
+            <div class="wf-three-column-boxes">
+              <div class="wf-tall-box">
+                <span class="wf-field-label">Prep Time</span>
+                <div class="inner-input-box">
+                  <span>15 Mins</span>
+                  <span>🕒</span>
+                </div>
+              </div>
+              <div class="wf-tall-box">
+                <span class="wf-field-label">Cook Time</span>
+                <div class="inner-input-box">
+                  <span>20 Mins</span>
+                  <span>🕒</span>
+                </div>
+              </div>
+              <div class="wf-tall-box">
+                <span class="wf-field-label">Serving Size</span>
+                <div class="inner-input-box">
+                  <span>2 Persons</span>
+                  <span>👥</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label class="wf-field-label">Meal Category</label>
+              <div class="wf-dropdown-box">
+                <span>Breakfast</span>
+                <span>▼</span>
+              </div>
+            </div>
+
+            <!-- 3 Tall Sub-Boxes for Nutrition -->
+            <div class="wf-three-column-boxes">
+              <div class="wf-tall-box">
+                <span class="wf-field-label">Carbohydrates</span>
+                <div class="inner-input-box">
+                  <span>50g (50%)</span>
+                  <span>🍞</span>
+                </div>
+              </div>
+              <div class="wf-tall-box">
+                <span class="wf-field-label">Protein</span>
+                <div class="inner-input-box">
+                  <span>30g (30%)</span>
+                  <span>🥩</span>
+                </div>
+              </div>
+              <div class="wf-tall-box">
+                <span class="wf-field-label">Healthy Fats</span>
+                <div class="inner-input-box">
+                  <span>20g (20%)</span>
+                  <span>🥑</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label class="wf-field-label">Calorie Count (kcal)</label>
+              <div class="wf-input-box-single">Enter calorie target (e.g. 420)</div>
+            </div>
+
+            <div>
+              <label class="wf-field-label">Recipe Description & Instructions</label>
+              <div class="wf-textarea-box">
+                Enter ingredients list, preparation steps, and dietary guidance notes...
+              </div>
+            </div>
+
+            <div>
+              <label class="wf-field-label">Dietary Badges</label>
+              <div style="display:flex; gap:18px; font-size:13px;">
+                <label><input type="checkbox" checked> Vegetarian</label>
+                <label><input type="checkbox"> Vegan</label>
+                <label><input type="checkbox"> Gluten-Free</label>
+                <label><input type="checkbox"> High-Protein</label>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:10px; margin-top:6px;">
+              <div class="wf-action-btn-box">SAVE RECIPE</div>
+              <div class="wf-action-btn-box outline">CANCEL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.1 Admin Wireframe: Add New Recipe Page</p>
+
+    <!-- ==================================================================== -->
+    <!-- 2. ADMIN SIDE WIREFRAME 2: EXECUTIVE DASHBOARD                       -->
+    <!-- ==================================================================== -->
+    <div id="admin-2" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/admin/dashboard</div>
+      </div>
+
+      <div class="wf-main-box">
+        <div class="wf-admin-side-boxes">
+          <div class="wf-box-admin-title">ADMIN PANEL</div>
+          <div class="wf-box-menu-item active">Dashboard</div>
+          <div class="wf-box-menu-item">Manage Recipes</div>
+          <div class="wf-box-menu-item">Add Recipe</div>
+          <div class="wf-box-menu-item">Workout Library</div>
+          <div class="wf-box-menu-item">Manage Users</div>
+          <div class="wf-box-menu-item">Health Articles</div>
+          <div class="wf-box-menu-item">Settings</div>
+        </div>
+
+        <div class="wf-admin-right-boxes">
+          <div class="wf-heading-box">
+            <h2>EXECUTIVE WELLNESS OVERVIEW</h2>
+            <p>System metrics, platform user growth, and habit completion stats.</p>
+          </div>
+
+          <!-- 4 Separate Metric Boxes -->
+          <div class="wf-three-column-boxes" style="grid-template-columns: repeat(4, 1fr);">
+            <div class="wf-tall-box" style="height:110px;">
+              <span class="wf-field-label">Active Members</span>
+              <div style="font-size:22px; font-weight:bold;">1,248</div>
+              <span style="font-size:11px; color:#333;">↑ +14.8% this month</span>
+            </div>
+            <div class="wf-tall-box" style="height:110px;">
+              <span class="wf-field-label">Daily Habits</span>
+              <div style="font-size:22px; font-weight:bold;">8,924</div>
+              <span style="font-size:11px; color:#333;">↑ +22.3% weekly</span>
+            </div>
+            <div class="wf-tall-box" style="height:110px;">
+              <span class="wf-field-label">Workouts Done</span>
+              <div style="font-size:22px; font-weight:bold;">3,410</div>
+              <span style="font-size:11px; color:#333;">↑ +8.1% active</span>
+            </div>
+            <div class="wf-tall-box" style="height:110px;">
+              <span class="wf-field-label">Pending Inquiries</span>
+              <div style="font-size:22px; font-weight:bold;">5 New</div>
+              <span style="font-size:11px; color:#333;">Action required</span>
+            </div>
+          </div>
+
+          <!-- Weekly Chart Box -->
+          <div class="wf-form-main-box">
+            <span class="wf-field-label">Weekly Activity Completion Chart (Mon - Sun)</span>
+            <div style="display:flex; align-items:flex-end; justify-content:space-between; height:120px; border-bottom:1.5px solid #000; gap:12px; padding:0 10px;">
+              <div style="flex:1; text-align:center;"><div style="height:65px; border:1.5px solid #000; background:#e2e8f0;"></div><span style="font-size:11px; font-weight:bold;">Mon</span></div>
+              <div style="flex:1; text-align:center;"><div style="height:90px; border:1.5px solid #000; background:#e2e8f0;"></div><span style="font-size:11px; font-weight:bold;">Tue</span></div>
+              <div style="flex:1; text-align:center;"><div style="height:80px; border:1.5px solid #000; background:#e2e8f0;"></div><span style="font-size:11px; font-weight:bold;">Wed</span></div>
+              <div style="flex:1; text-align:center;"><div style="height:105px; border:1.5px solid #000; background:#e2e8f0;"></div><span style="font-size:11px; font-weight:bold;">Thu</span></div>
+              <div style="flex:1; text-align:center;"><div style="height:115px; border:1.5px solid #000; background:#0f172a;"></div><span style="font-size:11px; font-weight:bold;">Fri</span></div>
+              <div style="flex:1; text-align:center;"><div style="height:55px; border:1.5px solid #000; background:#e2e8f0;"></div><span style="font-size:11px; font-weight:bold;">Sat</span></div>
+              <div style="flex:1; text-align:center;"><div style="height:75px; border:1.5px solid #000; background:#e2e8f0;"></div><span style="font-size:11px; font-weight:bold;">Sun</span></div>
+            </div>
+          </div>
+
+          <!-- Table Box -->
+          <div class="wf-form-main-box" style="padding:12px;">
+            <span class="wf-field-label">Recent Member Activity</span>
+            <div style="border:1.5px solid #000;">
+              <div style="display:grid; grid-template-columns: 2fr 1.5fr 1fr 1fr; padding:8px 10px; border-bottom:1.5px solid #000; background:#f1f5f9; font-weight:bold; font-size:12px;">
+                <span>Member</span><span>Assigned Plan</span><span>Streak</span><span>Status</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 2fr 1.5fr 1fr 1fr; padding:8px 10px; border-bottom:1px solid #ccc; font-size:12px;">
+                <span>Sarah Connor (sarah.c@wellness.com)</span><span>Strength & Mobility</span><span>28 Days</span><span>Active</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 2fr 1.5fr 1fr 1fr; padding:8px 10px; font-size:12px;">
+                <span>Marcus Rodriguez (marcus.r@wellness.com)</span><span>HIIT Burn</span><span>14 Days</span><span>Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.2 Admin Wireframe: Executive Dashboard Page</p>
+
+    <!-- ==================================================================== -->
+    <!-- 3. ADMIN SIDE WIREFRAME 3: ADD WORKOUT PROGRAM                      -->
+    <!-- ==================================================================== -->
+    <div id="admin-3" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/admin/add-workout</div>
+      </div>
+
+      <div class="wf-main-box">
+        <div class="wf-admin-side-boxes">
+          <div class="wf-box-admin-title">ADMIN PANEL</div>
+          <div class="wf-box-menu-item">Dashboard</div>
+          <div class="wf-box-menu-item">Manage Recipes</div>
+          <div class="wf-box-menu-item active">Workout Library</div>
+          <div class="wf-box-menu-item">Manage Users</div>
+          <div class="wf-box-menu-item">Health Articles</div>
+          <div class="wf-box-menu-item">Settings</div>
+        </div>
+
+        <div class="wf-admin-right-boxes">
+          <div class="wf-heading-box">
+            <h2>ADD NEW WORKOUT PROGRAM</h2>
+            <p>Configure exercise sequences, intensity levels, and targeted muscle zones.</p>
+          </div>
+
+          <div class="wf-form-main-box">
+            <div>
+              <label class="wf-field-label">Workout Routine Title</label>
+              <div class="wf-input-box-single">Enter workout title (e.g. 20-Min Tabata HIIT Burn)</div>
+            </div>
+
+            <!-- 3 Tall Sub-Boxes -->
+            <div class="wf-three-column-boxes">
+              <div class="wf-tall-box">
+                <span class="wf-field-label">Duration</span>
+                <div class="inner-input-box"><span>20 Mins</span><span>⏱️</span></div>
+              </div>
+              <div class="wf-tall-box">
+                <span class="wf-field-label">Intensity Level</span>
+                <div class="inner-input-box"><span>High (HIIT)</span><span>⚡</span></div>
+              </div>
+              <div class="wf-tall-box">
+                <span class="wf-field-label">Est. Calories Burned</span>
+                <div class="inner-input-box"><span>260 kcal</span><span>🔥</span></div>
+              </div>
+            </div>
+
+            <div>
+              <label class="wf-field-label">Target Muscle Focus</label>
+              <div class="wf-input-box-single">Cardiovascular & Full Body</div>
+            </div>
+
+            <div>
+              <label class="wf-field-label">Equipment Requirement</label>
+              <div class="wf-input-box-single">None (Bodyweight Only)</div>
+            </div>
+
+            <div>
+              <label class="wf-field-label">Exercise Sequence Details</label>
+              <div class="wf-textarea-box">
+                1. High Knees (40s on / 20s rest)&#10;2. Jump Squats (40s on / 20s rest)&#10;3. Mountain Climbers (40s on / 20s rest)&#10;4. Plyometric Burpees (40s on / 20s rest)
+              </div>
+            </div>
+
+            <div style="display:flex; gap:10px;">
+              <div class="wf-action-btn-box">SAVE WORKOUT PROGRAM</div>
+              <div class="wf-action-btn-box outline">CANCEL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.3 Admin Wireframe: Add Workout Page</p>
+
+    <!-- ==================================================================== -->
+    <!-- 4. ADMIN SIDE WIREFRAME 4: USER MANAGEMENT DIRECTORY                -->
+    <!-- ==================================================================== -->
+    <div id="admin-4" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/admin/users</div>
+      </div>
+
+      <div class="wf-main-box">
+        <div class="wf-admin-side-boxes">
+          <div class="wf-box-admin-title">ADMIN PANEL</div>
+          <div class="wf-box-menu-item">Dashboard</div>
+          <div class="wf-box-menu-item">Manage Recipes</div>
+          <div class="wf-box-menu-item">Workout Library</div>
+          <div class="wf-box-menu-item active">Manage Users</div>
+          <div class="wf-box-menu-item">Health Articles</div>
+          <div class="wf-box-menu-item">Settings</div>
+        </div>
+
+        <div class="wf-admin-right-boxes">
+          <div class="wf-heading-box" style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <h2>REGISTERED MEMBERS DIRECTORY</h2>
+              <p>Manage enrolled users, subscription tiers, and habit compliance.</p>
+            </div>
+            <div class="wf-action-btn-box" style="padding:6px 14px; font-size:12px;">+ ADD USER</div>
+          </div>
+
+          <div class="wf-form-main-box" style="padding:14px;">
+            <!-- Filter Row of Boxes -->
+            <div style="display:flex; gap:10px; margin-bottom:12px;">
+              <div class="wf-input-box-single" style="flex:2;">Search members by name or email...</div>
+              <div class="wf-dropdown-box" style="flex:1;"><span>All Health Goals</span><span>▼</span></div>
+              <div class="wf-dropdown-box" style="flex:1;"><span>Status: Active</span><span>▼</span></div>
+            </div>
+
+            <!-- Table Box -->
+            <div style="border:1.5px solid #000;">
+              <div style="display:grid; grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr; padding:8px 10px; border-bottom:1.5px solid #000; background:#f1f5f9; font-weight:bold; font-size:12px;">
+                <span>Member Name</span><span>Primary Goal</span><span>Streak</span><span>Status</span><span>Action</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr; padding:8px 10px; border-bottom:1px solid #ccc; font-size:12px;">
+                <span>Sarah Connor (sarah.c@wellness.com)</span><span>Strength & Mobility</span><span>28 Days</span><span>Active</span><span>[Edit] [Del]</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr; padding:8px 10px; border-bottom:1px solid #ccc; font-size:12px;">
+                <span>Marcus Rodriguez (marcus.r@wellness.com)</span><span>HIIT Burn</span><span>14 Days</span><span>Active</span><span>[Edit] [Del]</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr; padding:8px 10px; font-size:12px;">
+                <span>Elena Wright (elena.w@wellness.com)</span><span>Sleep Recovery</span><span>6 Days</span><span>Active</span><span>[Edit] [Del]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.4 Admin Wireframe: User Directory Page</p>
+
+    <!-- ==================================================================== -->
+    <!-- 5. ADMIN SIDE WIREFRAME 5: HEALTH ARTICLES & TIPS                   -->
+    <!-- ==================================================================== -->
+    <div id="admin-5" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/admin/tips</div>
+      </div>
+
+      <div class="wf-main-box">
+        <div class="wf-admin-side-boxes">
+          <div class="wf-box-admin-title">ADMIN PANEL</div>
+          <div class="wf-box-menu-item">Dashboard</div>
+          <div class="wf-box-menu-item">Manage Recipes</div>
+          <div class="wf-box-menu-item">Workout Library</div>
+          <div class="wf-box-menu-item">Manage Users</div>
+          <div class="wf-box-menu-item active">Health Articles</div>
+          <div class="wf-box-menu-item">Settings</div>
+        </div>
+
+        <div class="wf-admin-right-boxes">
+          <div class="wf-heading-box" style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <h2>HEALTH ARTICLES & TIPS CATALOG</h2>
+              <p>Curate educational content, circadian guides, and nutrition articles.</p>
+            </div>
+            <div class="wf-action-btn-box" style="padding:6px 14px; font-size:12px;">+ NEW ARTICLE</div>
+          </div>
+
+          <div class="wf-form-main-box" style="padding:14px;">
+            <div style="border:1.5px solid #000;">
+              <div style="display:grid; grid-template-columns: 2.5fr 1.2fr 1fr 1fr 1fr; padding:8px 10px; border-bottom:1.5px solid #000; background:#f1f5f9; font-weight:bold; font-size:12px;">
+                <span>Article Title</span><span>Category</span><span>Read Time</span><span>Views</span><span>Status</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 2.5fr 1.2fr 1fr 1fr 1fr; padding:8px 10px; border-bottom:1px solid #ccc; font-size:12px;">
+                <span>Demystifying the 90-Minute Sleep Cycle</span><span>Sleep Science</span><span>5 Mins</span><span>12,450</span><span>Featured</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 2.5fr 1.2fr 1fr 1fr 1fr; padding:8px 10px; border-bottom:1px solid #ccc; font-size:12px;">
+                <span>The 4-4-4 Box Breathing Technique</span><span>Mindfulness</span><span>3 Mins</span><span>9,820</span><span>Published</span>
+              </div>
+              <div style="display:grid; grid-template-columns: 2.5fr 1.2fr 1fr 1fr 1fr; padding:8px 10px; font-size:12px;">
+                <span>Macronutrient Balancing Without Neurosis</span><span>Nutrition</span><span>6 Mins</span><span>8,340</span><span>Published</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.5 Admin Wireframe: Health Articles Page</p>
+
+    <!-- ==================================================================== -->
+    <!-- 6. CLIENT SIDE WIREFRAME 1: HOME DASHBOARD                          -->
+    <!-- ==================================================================== -->
+    <div id="client-1" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/home</div>
+      </div>
+
+      <div class="wf-client-main-box">
+        <!-- Top Nav Box -->
+        <div class="wf-client-top-nav-box">
+          <div style="font-size:15px; font-weight:bold;">🌿 PERSONAL WELLNESS DASHBOARD</div>
+          <div class="wf-client-nav-items">
+            <span class="wf-client-nav-item-box active">Home</span>
+            <span class="wf-client-nav-item-box">Nutrition</span>
+            <span class="wf-client-nav-item-box">Fitness</span>
+            <span class="wf-client-nav-item-box">Sleep & Mind</span>
+            <span class="wf-client-nav-item-box">Daily Planner</span>
+          </div>
+          <div class="wf-client-nav-item-box">👤 Login / Sign Up</div>
+        </div>
+
+        <!-- Hero Banner Box -->
+        <div class="wf-hero-banner-box">
+          <div>
+            <div style="border:1px solid #000; display:inline-block; padding:2px 8px; font-size:11px; font-weight:bold; margin-bottom:10px;">
+              EMPOWER YOUR DAILY HEALTH
+            </div>
+            <h1 style="font-size:24px; font-weight:bold; margin-bottom:8px;">Your Personal Gateway to Balanced Living</h1>
+            <p style="font-size:13px; color:#444; margin-bottom:14px;">Harmonizing nutrition, physical workouts, sleep cycles, and daily habit planning.</p>
+            <div style="display:flex; gap:10px;">
+              <div class="wf-action-btn-box">START DAILY PLAN →</div>
+              <div class="wf-action-btn-box outline">EXPLORE NUTRITION</div>
+            </div>
+          </div>
+
+          <div class="wf-vitality-gauge-box">
+            <span class="wf-field-label">TODAY'S VITALITY SCORE</span>
+            <div class="wf-circle-box">82%</div>
+            <div class="wf-three-column-boxes" style="gap:6px;">
+              <div style="border:1px solid #000; padding:6px; font-size:11px;"><strong>8,450</strong><br>Steps</div>
+              <div style="border:1px solid #000; padding:6px; font-size:11px;"><strong>2.2 L</strong><br>Water</div>
+              <div style="border:1px solid #000; padding:6px; font-size:11px;"><strong>7.8 h</strong><br>Sleep</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Feature Boxes -->
+        <div class="wf-client-four-boxes">
+          <div class="wf-feature-pillar-box">
+            <div style="font-size:20px;">🥗</div>
+            <h3>Nutritional Balance</h3>
+            <p>Target macro splits, calories & wholesome meal plans.</p>
+          </div>
+          <div class="wf-feature-pillar-box">
+            <div style="font-size:20px;">⚡</div>
+            <h3>Dynamic Fitness</h3>
+            <p>Mobility yoga, HIIT calisthenics & posture recovery.</p>
+          </div>
+          <div class="wf-feature-pillar-box">
+            <div style="font-size:20px;">🌙</div>
+            <h3>Sleep & Recovery</h3>
+            <p>90-min circadian cycles & diaphragmatic breathing.</p>
+          </div>
+          <div class="wf-feature-pillar-box">
+            <div style="font-size:20px;">📅</div>
+            <h3>Daily Routine Planner</h3>
+            <p>Time-blocked schedule & interactive habit checklist.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.6 Client Wireframe: Home Overview & Dashboard Page</p>
+
+    <!-- ==================================================================== -->
+    <!-- 7. CLIENT SIDE WIREFRAME 2: NUTRITION & RECIPES                     -->
+    <!-- ==================================================================== -->
+    <div id="client-2" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/nutrition</div>
+      </div>
+
+      <div class="wf-client-main-box">
+        <div class="wf-client-top-nav-box">
+          <div style="font-size:15px; font-weight:bold;">🌿 PERSONAL WELLNESS DASHBOARD</div>
+          <div class="wf-client-nav-items">
+            <span class="wf-client-nav-item-box">Home</span>
+            <span class="wf-client-nav-item-box active">Nutrition</span>
+            <span class="wf-client-nav-item-box">Fitness</span>
+            <span class="wf-client-nav-item-box">Daily Planner</span>
+          </div>
+          <div class="wf-client-nav-item-box">👤 Login</div>
+        </div>
+
+        <!-- 4 Macro Proportion Boxes -->
+        <div class="wf-client-four-boxes">
+          <div class="wf-tall-box" style="height:110px;"><span class="wf-field-label">Carbohydrates</span><div style="font-size:20px; font-weight:bold;">50%</div><span style="font-size:11px;">Grains & Oats</span></div>
+          <div class="wf-tall-box" style="height:110px;"><span class="wf-field-label">Lean Protein</span><div style="font-size:20px; font-weight:bold;">30%</div><span style="font-size:11px;">Legumes & Fish</span></div>
+          <div class="wf-tall-box" style="height:110px;"><span class="wf-field-label">Healthy Fats</span><div style="font-size:20px; font-weight:bold;">20%</div><span style="font-size:11px;">Avocado & Nuts</span></div>
+          <div class="wf-tall-box" style="height:110px;"><span class="wf-field-label">Daily Hydration</span><div style="font-size:20px; font-weight:bold;">2.5 / 3.0 L</div><span style="font-size:11px;">8-10 Glasses</span></div>
+        </div>
+
+        <!-- Recipe Cards Row -->
+        <div class="wf-three-column-boxes">
+          <div class="wf-form-main-box">
+            <div style="height:80px; border:1px solid #000; background:#f1f5f9; display:flex; align-items:center; justify-content:center; font-weight:bold;">[ RECIPE IMAGE ]</div>
+            <strong>Avocado & Poached Egg Toast</strong>
+            <p style="font-size:12px; color:#444;">15 Mins | 380 kcal | 18g Protein</p>
+            <div class="wf-action-btn-box" style="padding:6px 12px; font-size:11px;">View Recipe →</div>
+          </div>
+          <div class="wf-form-main-box">
+            <div style="height:80px; border:1px solid #000; background:#f1f5f9; display:flex; align-items:center; justify-content:center; font-weight:bold;">[ RECIPE IMAGE ]</div>
+            <strong>Mediterranean Quinoa Bowl</strong>
+            <p style="font-size:12px; color:#444;">20 Mins | 440 kcal | 16g Protein</p>
+            <div class="wf-action-btn-box" style="padding:6px 12px; font-size:11px;">View Recipe →</div>
+          </div>
+          <div class="wf-form-main-box">
+            <div style="height:80px; border:1px solid #000; background:#f1f5f9; display:flex; align-items:center; justify-content:center; font-weight:bold;">[ RECIPE IMAGE ]</div>
+            <strong>Herb-Crusted Wild Salmon</strong>
+            <p style="font-size:12px; color:#444;">25 Mins | 510 kcal | 42g Protein</p>
+            <div class="wf-action-btn-box" style="padding:6px 12px; font-size:11px;">View Recipe →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.7 Client Wireframe: Nutrition Page</p>
+
+    <!-- ==================================================================== -->
+    <!-- 8. CLIENT SIDE WIREFRAME 3: FITNESS & WORKOUTS                      -->
+    <!-- ==================================================================== -->
+    <div id="client-3" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/fitness</div>
+      </div>
+
+      <div class="wf-client-main-box">
+        <div class="wf-client-top-nav-box">
+          <div style="font-size:15px; font-weight:bold;">🌿 PERSONAL WELLNESS DASHBOARD</div>
+          <div class="wf-client-nav-items">
+            <span class="wf-client-nav-item-box">Home</span>
+            <span class="wf-client-nav-item-box">Nutrition</span>
+            <span class="wf-client-nav-item-box active">Fitness</span>
+            <span class="wf-client-nav-item-box">Daily Planner</span>
+          </div>
+          <div class="wf-client-nav-item-box">👤 Login</div>
+        </div>
+
+        <!-- Heart Rate Zones Boxes -->
+        <div class="wf-client-four-boxes">
+          <div class="wf-tall-box" style="height:100px;"><span class="wf-field-label">Zone 1-2</span><div style="font-size:18px; font-weight:bold;">100-120 BPM</div><span>Warmup</span></div>
+          <div class="wf-tall-box" style="height:100px;"><span class="wf-field-label">Zone 3</span><div style="font-size:18px; font-weight:bold;">120-145 BPM</div><span>Aerobic</span></div>
+          <div class="wf-tall-box" style="height:100px;"><span class="wf-field-label">Zone 4</span><div style="font-size:18px; font-weight:bold;">145-165 BPM</div><span>Threshold</span></div>
+          <div class="wf-tall-box" style="height:100px;"><span class="wf-field-label">Zone 5</span><div style="font-size:18px; font-weight:bold;">165+ BPM</div><span>Peak HIIT</span></div>
+        </div>
+
+        <!-- 2 Workout Cards -->
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+          <div class="wf-form-main-box">
+            <div style="border-bottom:1.5px solid #000; padding-bottom:6px;">
+              <strong>Sunrise Yoga & Mobility</strong> (18 Mins | Low Intensity)
+            </div>
+            <p style="font-size:12px; margin-top:6px;">Cat-Cow flexion (10 cycles), Downward Dog (8 reps), Cobra Stretch (60s hold).</p>
+            <div class="wf-action-btn-box" style="padding:6px 14px; font-size:11px;">+ Add to Today's Routine</div>
+          </div>
+          <div class="wf-form-main-box">
+            <div style="border-bottom:1.5px solid #000; padding-bottom:6px;">
+              <strong>20-Min Tabata HIIT Burn</strong> (20 Mins | High Intensity)
+            </div>
+            <p style="font-size:12px; margin-top:6px;">High Knees (40s), Jump Squats (40s), Mountain Climbers (40s), Burpees (40s).</p>
+            <div class="wf-action-btn-box" style="padding:6px 14px; font-size:11px;">+ Add to Today's Routine</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.8 Client Wireframe: Fitness Page</p>
+
+    <!-- ==================================================================== -->
+    <!-- 9. CLIENT SIDE WIREFRAME 4: MENTAL WELLNESS & SLEEP                 -->
+    <!-- ==================================================================== -->
+    <div id="client-4" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/wellness</div>
+      </div>
+
+      <div class="wf-client-main-box">
+        <div class="wf-client-top-nav-box">
+          <div style="font-size:15px; font-weight:bold;">🌿 PERSONAL WELLNESS DASHBOARD</div>
+          <div class="wf-client-nav-items">
+            <span class="wf-client-nav-item-box">Home</span>
+            <span class="wf-client-nav-item-box">Nutrition</span>
+            <span class="wf-client-nav-item-box active">Mental Wellness</span>
+            <span class="wf-client-nav-item-box">Daily Planner</span>
+          </div>
+          <div class="wf-client-nav-item-box">👤 Login</div>
+        </div>
+
+        <!-- 4-4-4 Box Breathing Visualizer Box -->
+        <div class="wf-form-main-box" style="text-align:center; padding:24px;">
+          <div style="border:1.5px solid #000; display:inline-block; padding:4px 12px; font-size:13px; font-weight:bold;">
+            4-4-4 BOX BREATHING PACER
+          </div>
+          <div class="wf-circle-box" style="width:100px; height:100px; margin:16px auto;">Breathe</div>
+          <div style="display:flex; justify-content:center; gap:20px; font-size:13px; font-weight:bold;">
+            <span>Inhale: 4s</span><span>Hold: 4s</span><span>Exhale: 4s</span>
+          </div>
+        </div>
+
+        <!-- 3 Sleep Cycle Stages Boxes -->
+        <div class="wf-three-column-boxes">
+          <div class="wf-tall-box">
+            <span class="wf-field-label">Light Sleep (NREM)</span>
+            <p style="font-size:12px; color:#444;">Heart rate slows. Muscle relaxation begins. 50% of sleep.</p>
+          </div>
+          <div class="wf-tall-box">
+            <span class="wf-field-label">Slow-Wave Deep Sleep</span>
+            <p style="font-size:12px; color:#444;">Cellular repair and immune consolidation. 20-25% of sleep.</p>
+          </div>
+          <div class="wf-tall-box">
+            <span class="wf-field-label">REM Dream Sleep</span>
+            <p style="font-size:12px; color:#444;">Memory synthesis and emotional processing. 20-25% of sleep.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.9 Client Wireframe: Mental Wellness & Sleep Page</p>
+
+    <!-- ==================================================================== -->
+    <!-- 10. CLIENT SIDE WIREFRAME 5: DAILY PLANNER & HABIT TRACKER          -->
+    <!-- ==================================================================== -->
+    <div id="client-5" class="wf-browser-outer">
+      <div class="wf-browser-topbar">
+        <div class="wf-nav-arrows">← → ↻ ✕</div>
+        <div class="wf-address-bar">https://personal-wellness.edu/planner</div>
+      </div>
+
+      <div class="wf-client-main-box">
+        <div class="wf-client-top-nav-box">
+          <div style="font-size:15px; font-weight:bold;">🌿 PERSONAL WELLNESS DASHBOARD</div>
+          <div class="wf-client-nav-items">
+            <span class="wf-client-nav-item-box">Home</span>
+            <span class="wf-client-nav-item-box">Nutrition</span>
+            <span class="wf-client-nav-item-box">Fitness</span>
+            <span class="wf-client-nav-item-box active">Daily Planner</span>
+          </div>
+          <div class="wf-client-nav-item-box">👤 Login</div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 2fr 1.2fr; gap:14px;">
+          <!-- Left: Hourly Schedule Box -->
+          <div class="wf-form-main-box">
+            <span class="wf-field-label" style="font-size:14px; border-bottom:1.5px solid #000; padding-bottom:6px;">
+              DAILY TIME-BLOCKED SCHEDULE
+            </span>
+            <div style="display:flex; flex-direction:column; gap:8px; font-size:12px;">
+              <div style="border-bottom:1px solid #ddd; padding-bottom:4px;"><strong>06:30 AM</strong> — Hydration & Morning Light Walk (500ml water)</div>
+              <div style="border-bottom:1px solid #ddd; padding-bottom:4px;"><strong>08:00 AM</strong> — High-Protein Balanced Breakfast</div>
+              <div style="border-bottom:1px solid #ddd; padding-bottom:4px;"><strong>09:30 AM</strong> — 90-Minute Deep Work Block</div>
+              <div style="border-bottom:1px solid #ddd; padding-bottom:4px;"><strong>05:30 PM</strong> — Dynamic Cardio / Tabata HIIT Session</div>
+              <div><strong>10:15 PM</strong> — Digital Curfew & 4-4-4 Box Breathing</div>
+            </div>
+          </div>
+
+          <!-- Right: Habit Checklist Box -->
+          <div class="wf-form-main-box">
+            <span class="wf-field-label" style="font-size:14px; border-bottom:1.5px solid #000; padding-bottom:6px;">
+              TODAY'S HABIT CHECKLIST
+            </span>
+            <div style="display:flex; flex-direction:column; gap:8px; font-size:12px;">
+              <label><input type="checkbox" checked> 1L Water upon waking</label>
+              <label><input type="checkbox" checked> 15m Morning sunlight</label>
+              <label><input type="checkbox" checked> High-protein breakfast</label>
+              <label><input type="checkbox"> 30m Exercise / movement</label>
+              <label><input type="checkbox"> 5m Box breathing reset</label>
+              <label><input type="checkbox"> Zero screens 45m before bed</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="wf-fig-caption">fig. 1.10 Client Wireframe: Daily Planner & Habit Checklist Page</p>
+
+  </div>
+
+</body>
+</html>

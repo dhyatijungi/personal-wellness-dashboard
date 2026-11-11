@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ & Contact | Personal Wellness Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/client.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon">🌿</div>
+        <div>Vitality<span>Pulse</span></div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+          <li><a href="fitness.html" class="nav-link">Fitness</a></li>
+          <li><a href="wellness.html" class="nav-link">Mental Wellness</a></li>
+          <li><a href="planner.html" class="nav-link">Daily Planner</a></li>
+          <li><a href="contact.html" class="nav-link active">FAQ & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="admin/feedback.html" class="admin-switch-btn" title="View Inquiries in Admin">
+          <span>⚙️</span> Admin Portal
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="container">
+        <div style="max-width: 720px;">
+          <span class="section-tag" style="background-color: #99f6e4; color: #115e59;">Support & Clarity</span>
+          <h1 style="font-size: 2.5rem; font-weight: 800; color: #1e293b; margin: 0.5rem 0 1rem;">
+            Frequently Asked Questions & <span style="color: #0d9488;">Contact Hub</span>
+          </h1>
+          <p style="color: #64748b; font-size: 1.05rem;">
+            Have questions regarding workout modifications, dietary guidelines, or academic project architecture?
+            Browse our common wellness questions or submit an inquiry to our student project inbox.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Contact & FAQ Grid -->
+    <section class="container">
+      <div class="contact-grid">
+        <!-- Left: Contact Form -->
+        <div class="card">
+          <div style="margin-bottom: 1.5rem;">
+            <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-dark);">Send Us a Wellness Inquiry</h2>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              All messages are routed directly to the administrator feedback inbox.
+            </p>
+          </div>
+
+          <form action="admin/feedback.html" method="get">
+            <div class="grid-2" style="gap: 1rem;">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com" required>
+              </div>
+            </div>
+
+            <div class="grid-2" style="gap: 1rem;">
+              <div class="form-group">
+                <label for="topic" class="form-label">Inquiry Category</label>
+                <select id="topic" name="topic" class="form-control">
+                  <option value="nutrition">Nutrition & Diet Consultation</option>
+                  <option value="fitness">Workout Routine Guidance</option>
+                  <option value="sleep">Sleep & Circadian Advice</option>
+                  <option value="project">Web Technology Subject Inquiry</option>
+                  <option value="other">General Feedback</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="urgency" class="form-label">Urgency Level</label>
+                <select id="urgency" name="urgency" class="form-control">
+                  <option value="normal">Standard Question</option>
+                  <option value="high">Priority Feedback</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message *</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Describe your question or recommendation..." rows="5" required></textarea>
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1rem;">
+              <button type="submit" class="btn btn-primary">
+                Send Message ✉️
+              </button>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Response within 24-48 hours</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right: FAQ Accordions & Info -->
+        <div>
+          <div style="margin-bottom: 1.5rem;">
+            <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-dark);">Frequently Asked Questions</h2>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              Quick answers regarding the Personal Wellness Dashboard.
+            </p>
+          </div>
+
+          <!-- Pure HTML5/CSS Accordion using details & summary -->
+          <div class="faq-accordion">
+            <details class="faq-item" open>
+              <summary>What is the Personal Wellness Dashboard?</summary>
+              <div class="faq-content">
+                The Personal Wellness Dashboard is a responsive, static web application engineered using semantic HTML5 and modern CSS3 for the Web Technology subject. It unites nutrition, fitness, sleep, mindfulness, and daily habits into a cohesive interface.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Is this website built strictly with HTML and CSS?</summary>
+              <div class="faq-content">
+                Yes! The entire architecture—including responsive mobile navigation, interactive tab filtering, habit checklists, and modal dialogs—is built cleanly with pure semantic HTML5 and CSS3 without requiring external JavaScript runtimes.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>How does the 90-minute sleep cycle calculator work?</summary>
+              <div class="faq-content">
+                Human sleep traverses 4 distinct stages approximately every 90 minutes. Setting an alarm to wake up precisely between cycles avoids waking up during deep Slow-Wave Sleep (Stage 3), which causes morning grogginess (sleep inertia).
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Are the workout routines safe for complete beginners?</summary>
+              <div class="faq-content">
+                Yes, our programs feature tiered intensity meters. Routines such as "Sunrise Yoga & Spinal Mobility" and the "Desk Posture Reset" are low-impact and designed for sedentary individuals or desk workers.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Where can I view the Administrator Control Panel?</summary>
+              <div class="faq-content">
+                You can click the <strong>Admin Portal</strong> button located at the top-right of any page or visit the <a href="admin/index.html" style="color: var(--primary); font-weight: 700;">Admin Dashboard</a> directly to explore user management, workout libraries, recipe catalogs, and analytics.
+              </div>
+            </details>
+          </div>
+
+          <!-- Wellness Office Info Card -->
+          <div class="card" style="margin-top: 1.75rem; background: #f8fafc;">
+            <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem;">🏛️ Subject & Academic Information</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+              <strong>Project:</strong> Personal Wellness Dashboard<br>
+              <strong>Discipline:</strong> Web Technology Laboratory<br>
+              <strong>Architecture:</strong> Client-Side (6 Pages) + Admin-Side (6 Pages)<br>
+              <strong>Support Email:</strong> vitalitypulse@wellness-edu.org
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #ffffff;">
+            <div class="logo-icon">🌿</div>
+            <div>Vitality<span>Pulse</span></div>
+          </div>
+          <p>
+            An accessible wellness portal created to foster healthier lifestyles through balanced daily choices.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Sections</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="nutrition.html">Nutrition & Diets</a></li>
+            <li><a href="fitness.html">Fitness & Workouts</a></li>
+            <li><a href="wellness.html">Mental Wellness & Sleep</a></li>
+            <li><a href="planner.html">Daily Planner & Goals</a></li>
+            <li><a href="contact.html">FAQ & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admin Portal</h4>
+          <ul class="footer-links">
+            <li><a href="admin/feedback.html">Inquiries & Feedback</a></li>
+            <li><a href="admin/index.html">Admin Dashboard</a></li>
+            <li><a href="admin/users.html">User Directory</a></li>
+            <li><a href="admin/tips-manage.html">Articles Management</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Note</h4>
+          <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.6;">
+            All client and admin interfaces adhere strictly to standard semantic HTML5 validation and CSS3 design principles.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Personal Wellness Dashboard. Responsive Web Technology Project.</p>
+        <p><a href="admin/feedback.html" style="color: var(--primary);">Go to Admin Messages Inbox →</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

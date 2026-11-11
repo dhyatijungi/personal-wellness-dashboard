@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Articles & Tips | VitalityPulse Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- Sidebar Navigation -->
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo-badge">🌿</div>
+      <div class="admin-brand-title">
+        VitalityPulse
+        <span>Administrator</span>
+      </div>
+    </div>
+
+    <div class="admin-nav-group">
+      <div class="nav-category">Main Controls</div>
+      <nav class="admin-nav-links">
+        <a href="index.html" class="admin-nav-item">
+          <span class="icon">📊</span> Dashboard Overview
+        </a>
+        <a href="users.html" class="admin-nav-item">
+          <span class="icon">👥</span> User Management
+          <span class="admin-badge-count">1,248</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Content Modules</div>
+      <nav class="admin-nav-links">
+        <a href="nutrition-manage.html" class="admin-nav-item">
+          <span class="icon">🥗</span> Nutrition & Meals
+          <span class="admin-badge-count">48</span>
+        </a>
+        <a href="fitness-manage.html" class="admin-nav-item">
+          <span class="icon">⚡</span> Fitness Library
+          <span class="admin-badge-count">32</span>
+        </a>
+        <a href="tips-manage.html" class="admin-nav-item active">
+          <span class="icon">📝</span> Health Articles
+          <span class="admin-badge-count">24</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Community & Support</div>
+      <nav class="admin-nav-links">
+        <a href="feedback.html" class="admin-nav-item">
+          <span class="icon">💬</span> User Inquiries
+          <span class="admin-badge-count" style="background-color: #ef4444; color: #fff;">5</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="admin-sidebar-footer">
+      <div class="admin-avatar">AD</div>
+      <div class="admin-info">
+        <div class="admin-name">Admin Control</div>
+        <div class="admin-role">System Lead (Web Tech)</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <h1 class="admin-page-title">Health Articles, Tips & Guides</h1>
+      </div>
+
+      <div class="topbar-right">
+        <div class="admin-search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="Search wellness articles...">
+        </div>
+        <a href="../wellness.html" class="view-client-btn">
+          <span>🌐</span> View Wellness Page
+        </a>
+      </div>
+    </header>
+
+    <main class="admin-container">
+      <!-- Article KPI Grid -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Total Articles</span>
+            <div class="kpi-icon" style="background:#ede9fe; color:#7c3aed;">📝</div>
+          </div>
+          <div class="kpi-value">24</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Published wellness insights</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Cumulative Article Reads</span>
+            <div class="kpi-icon" style="background:#ecfdf5; color:#059669;">👀</div>
+          </div>
+          <div class="kpi-value">45,210</div>
+          <div style="font-size: 0.8rem; color: #059669;">+18.4% engagement</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Featured Guides</span>
+            <div class="kpi-icon" style="background:#fef3c7; color:#d97706;">⭐</div>
+          </div>
+          <div class="kpi-value">6 Guides</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Highlighted on client home</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Average Read Time</span>
+            <div class="kpi-icon" style="background:#dbeafe; color:#2563eb;">⏱️</div>
+          </div>
+          <div class="kpi-value">4.5 Mins</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Digestible scientific reads</div>
+        </div>
+      </section>
+
+      <!-- Articles Management Table -->
+      <section class="table-card">
+        <div class="table-header-bar">
+          <div>
+            <h3 class="table-title">Published Health Articles & Tips Library</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Review, edit, and curate evidence-based health publications</p>
+          </div>
+          <div class="table-actions">
+            <a href="#add-article-modal" class="btn btn-primary btn-sm">+ Publish New Article</a>
+          </div>
+        </div>
+
+        <div class="responsive-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Article Title</th>
+                <th>Category</th>
+                <th>Author</th>
+                <th>Read Time</th>
+                <th>Views</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Demystifying the 90-Minute Ultradian Sleep Cycle</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Circadian rhythms, stage 3 delta waves, REM sleep</div>
+                </td>
+                <td><span class="badge badge-purple">Sleep Science</span></td>
+                <td>Dr. Sarah Lin</td>
+                <td>5 Mins</td>
+                <td><strong>12,450</strong></td>
+                <td><span class="badge badge-green">Featured</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>The 4-4-4 Box Breathing Technique for Acute Stress</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Vagus nerve stimulation and parasympathetic control</div>
+                </td>
+                <td><span class="badge badge-blue">Mindfulness</span></td>
+                <td>Prof. David Vance</td>
+                <td>3 Mins</td>
+                <td><strong>9,820</strong></td>
+                <td><span class="badge badge-green">Published</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Macronutrient Balancing Without Calorie Neurosis</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Plate division method and glucose stabilization</div>
+                </td>
+                <td><span class="badge badge-amber">Nutrition</span></td>
+                <td>Elena Rostova, RD</td>
+                <td>6 Mins</td>
+                <td><strong>8,340</strong></td>
+                <td><span class="badge badge-green">Published</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Ergonomic Desk Posture: Fixing Anterior Pelvic Tilt</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Thoracic spine extension and hip flexor mobilization</div>
+                </td>
+                <td><span class="badge badge-rose">Physical Fitness</span></td>
+                <td>Coach Mike Reynolds</td>
+                <td>4 Mins</td>
+                <td><strong>6,910</strong></td>
+                <td><span class="badge badge-green">Published</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Blue Light Curfew: Protecting Retinal Melatonin</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Screen filters and ambient warm lighting routines</div>
+                </td>
+                <td><span class="badge badge-purple">Sleep Science</span></td>
+                <td>Dr. Sarah Lin</td>
+                <td>4 Mins</td>
+                <td><strong>5,420</strong></td>
+                <td><span class="badge badge-green">Published</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Hydration Biomarkers: More Than Just Water</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Sodium, potassium, and magnesium cellular transport</div>
+                </td>
+                <td><span class="badge badge-amber">Nutrition</span></td>
+                <td>Elena Rostova, RD</td>
+                <td>5 Mins</td>
+                <td><strong>2,270</strong></td>
+                <td><span class="badge" style="background:#f1f5f9; color:#64748b;">Draft</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination-bar">
+          <span>Showing 6 of 24 articles</span>
+          <div class="pagination-controls">
+            <span class="page-num active">1</span>
+            <span class="page-num">2</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Pure CSS Modal Dialog for Adding an Article (Targeted via #add-article-modal) -->
+  <div id="add-article-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">+ Publish New Wellness Article</h3>
+        <a href="#" class="modal-close-btn" title="Close modal">&times;</a>
+      </div>
+
+      <form action="tips-manage.html" method="get">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Article Headline *</label>
+            <input type="text" class="form-control" placeholder="e.g. The Neurobiology of Morning Sunlight" required>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select class="form-control">
+                <option>Sleep Science</option>
+                <option>Mindfulness & Mental Calm</option>
+                <option>Nutrition & Diet</option>
+                <option>Fitness & Movement</option>
+                <option>Daily Habits</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Estimated Read Time</label>
+              <input type="text" class="form-control" placeholder="e.g. 4 Mins" required>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Author Name</label>
+              <input type="text" class="form-control" placeholder="e.g. Dr. Sarah Lin">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Publication Status</label>
+              <select class="form-control">
+                <option>Publish Live</option>
+                <option>Save as Draft</option>
+                <option>Feature on Homepage</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Article Summary / Key Takeaway</label>
+            <textarea class="form-control" placeholder="A concise 2-sentence summary for preview cards..." rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline btn-sm">Cancel</a>
+          <button type="submit" class="btn btn-primary btn-sm">Publish Article</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

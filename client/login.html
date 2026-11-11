@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Wellness Dashboard | Login & Sign Up</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-body">
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <!-- App Logo Badge & Header -->
+      <div class="auth-logo-badge">🌿</div>
+      <div class="auth-welcome">Welcome to</div>
+      <h1 class="auth-brand-title">Personal Wellness <span>Dashboard</span></h1>
+      <p class="auth-subtitle">A Responsive Health & Lifestyle Website</p>
+
+      <!-- Role Selector Tabs: Member vs Admin -->
+      <div class="role-tabs">
+        <button type="button" id="clientTabBtn" class="role-tab-btn active">
+          <span>👤</span> Member
+        </button>
+        <button type="button" id="adminTabBtn" class="role-tab-btn">
+          <span>⚙️</span> Wellness Admin
+        </button>
+      </div>
+
+      <!-- ================================================================== -->
+      <!-- 1. MEMBER / CLIENT PANEL (Signup & Sign In)                        -->
+      <!-- ================================================================== -->
+      <div id="clientPanel">
+        <!-- 1A. Member Signup Form -->
+        <div id="clientSignupPanel">
+          <h2 class="panel-heading">Create Account</h2>
+          <p class="panel-subtext">Join Personal Wellness Dashboard to track your daily health.</p>
+
+          <form id="clientSignupForm" class="auth-form" novalidate>
+            <div class="auth-form-group">
+              <label for="signupUsername" class="auth-form-label">Username</label>
+              <input type="text" id="signupUsername" class="auth-input" placeholder="e.g. MayaSharma" required>
+            </div>
+
+            <div class="auth-form-group">
+              <label for="signupEmail" class="auth-form-label">Email Address</label>
+              <input type="email" id="signupEmail" class="auth-input" placeholder="user@wellnessdashboard.com" required>
+            </div>
+
+            <div class="auth-form-group">
+              <label for="signupPhone" class="auth-form-label">Mobile Number (10 Digits)</label>
+              <input type="tel" id="signupPhone" class="auth-input" placeholder="e.g. 9876543210" required>
+            </div>
+
+            <div class="auth-form-group">
+              <label for="signupPassword" class="auth-form-label">Password (Min. 6 Characters)</label>
+              <input type="password" id="signupPassword" class="auth-input" placeholder="••••••••" required>
+            </div>
+
+            <div class="auth-form-group">
+              <label for="confirmPassword" class="auth-form-label">Confirm Password</label>
+              <input type="password" id="confirmPassword" class="auth-input" placeholder="••••••••" required>
+            </div>
+
+            <!-- Client Validation Error Message Display -->
+            <span id="signupError" class="auth-error-msg"></span>
+
+            <button type="submit" class="auth-submit-btn">Save</button>
+
+            <div class="auth-switch-text">
+              Already have an account? 
+              <a href="#" id="showLoginLink" class="auth-switch-link">Login</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- 1B. Member Sign In Form -->
+        <div id="clientLoginPanel" hidden>
+          <h2 class="panel-heading">Member Sign In</h2>
+          <p class="panel-subtext">Sign in to your Personal Wellness Dashboard.</p>
+
+          <form id="clientLoginForm" class="auth-form" novalidate>
+            <div class="auth-form-group">
+              <label for="clientLoginEmail" class="auth-form-label">Email Address or Username</label>
+              <input type="text" id="clientLoginEmail" class="auth-input" placeholder="user@wellnessdashboard.com" required>
+            </div>
+
+            <div class="auth-form-group">
+              <label for="clientLoginPassword" class="auth-form-label">Password</label>
+              <input type="password" id="clientLoginPassword" class="auth-input" placeholder="••••••••" required>
+            </div>
+
+            <span id="clientLoginSuccess" class="auth-success-msg"></span>
+            <span id="clientLoginError" class="auth-error-msg"></span>
+
+            <button type="submit" class="auth-submit-btn">Sign In →</button>
+
+            <div class="auth-switch-text">
+              Don't have an account? 
+              <a href="#" id="showSignupLink" class="auth-switch-link">Create Account</a>
+            </div>
+
+            <div class="auth-credentials-hint">
+              <strong>Demo Member Login:</strong><br>
+              Register above or use: <code>user@wellnessdashboard.com</code> / <code>wellness123</code>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- ================================================================== -->
+      <!-- 2. WELLNESS ADMIN PANEL                                            -->
+      <!-- ================================================================== -->
+      <div id="adminPanel" hidden>
+        <h2 class="panel-heading">Admin Sign In</h2>
+        <p class="panel-subtext">Administrator access to Personal Wellness Dashboard.</p>
+
+        <form id="adminLoginForm" class="auth-form" novalidate>
+          <div class="auth-form-group">
+            <label for="adminEmail" class="auth-form-label">Admin Email</label>
+            <input type="email" id="adminEmail" class="auth-input" placeholder="admin@wellnessdashboard.com" required>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="adminPassword" class="auth-form-label">Password</label>
+            <input type="password" id="adminPassword" class="auth-input" placeholder="••••••••" required>
+          </div>
+
+          <!-- Admin Error Display Element -->
+          <span id="adminLoginError" class="auth-error-msg"></span>
+
+          <button type="submit" class="auth-submit-btn">Admin Sign In →</button>
+
+          <div class="auth-credentials-hint">
+            <strong>Administrator Credentials:</strong><br>
+            Email: <code>admin@wellnessdashboard.com</code> (or <code>admin@wellness.com</code>)<br>
+            Password: <code>admin123</code>
+          </div>
+        </form>
+      </div>
+
+      <!-- Academic Project Details -->
+      <div class="auth-footnote">
+        <strong>Personal Wellness Dashboard</strong><br>
+        01CE1306 – Web Technology – Project- JS Validation
+      </div>
+    </div>
+  </div>
+
+  <!-- Include JavaScript Validation Code -->
+  <script src="js/validation.js"></script>
+</body>
+</html>

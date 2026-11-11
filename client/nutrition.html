@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition & Diet Plans | Personal Wellness Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/client.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon">🌿</div>
+        <div>Vitality<span>Pulse</span></div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="nutrition.html" class="nav-link active">Nutrition</a></li>
+          <li><a href="fitness.html" class="nav-link">Fitness</a></li>
+          <li><a href="wellness.html" class="nav-link">Mental Wellness</a></li>
+          <li><a href="planner.html" class="nav-link">Daily Planner</a></li>
+          <li><a href="contact.html" class="nav-link">FAQ & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="admin/nutrition-manage.html" class="admin-switch-btn" title="Manage Nutrition Items">
+          <span>⚙️</span> Admin Portal
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Nutrition Hero -->
+    <section class="nutrition-hero">
+      <div class="container">
+        <div style="max-width: 700px;">
+          <span class="section-tag" style="background-color: #fde68a; color: #92400e;">Nutritional Intelligence</span>
+          <h1 style="font-size: 2.5rem; font-weight: 800; color: #1e293b; margin: 0.5rem 0 1rem;">
+            Fuel Your Body With <span style="color: #d97706;">Wholesome Science</span>
+          </h1>
+          <p style="color: #64748b; font-size: 1.05rem;">
+            Healthy nutrition is not about restriction—it's about nourishment. Learn optimal macro ratios,
+            maintain vital hydration, and cook delicious balanced meals that revitalize cellular energy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Macronutrient Target Grid -->
+    <section class="container" style="padding: 3rem 1.5rem 1rem;">
+      <div class="section-header" style="text-align: left; margin-bottom: 1.5rem;">
+        <span class="section-tag">Balanced Intake</span>
+        <h2 style="font-size: 1.8rem; font-weight: 800;">Target Macronutrient Ratios</h2>
+        <p style="color: var(--text-muted);">Standard recommended dietary distribution for sustained metabolic health.</p>
+      </div>
+
+      <div class="macro-split-grid">
+        <div class="macro-card">
+          <span class="badge badge-amber">Complex Energy</span>
+          <h3 style="margin-top: 0.5rem; font-size: 1.25rem;">Carbohydrates</h3>
+          <div style="font-size: 1.6rem; font-weight: 800; color: var(--text-dark); margin: 0.25rem 0;">50%</div>
+          <div class="macro-progress-bar"><div class="bar-carbs"></div></div>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Whole grains, oats, quinoa, sweet potatoes</p>
+        </div>
+
+        <div class="macro-card">
+          <span class="badge badge-green">Muscle Repair</span>
+          <h3 style="margin-top: 0.5rem; font-size: 1.25rem;">Lean Protein</h3>
+          <div style="font-size: 1.6rem; font-weight: 800; color: var(--text-dark); margin: 0.25rem 0;">30%</div>
+          <div class="macro-progress-bar"><div class="bar-protein"></div></div>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Legumes, eggs, tofu, wild fish, seeds</p>
+        </div>
+
+        <div class="macro-card">
+          <span class="badge badge-blue">Hormone Health</span>
+          <h3 style="margin-top: 0.5rem; font-size: 1.25rem;">Healthy Fats</h3>
+          <div style="font-size: 1.6rem; font-weight: 800; color: var(--text-dark); margin: 0.25rem 0;">20%</div>
+          <div class="macro-progress-bar"><div class="bar-fats"></div></div>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Avocados, extra virgin olive oil, walnuts</p>
+        </div>
+
+        <div class="macro-card">
+          <span class="badge" style="background:#dbeafe; color:#1e40af;">Cellular Flush</span>
+          <h3 style="margin-top: 0.5rem; font-size: 1.25rem;">Hydration (H₂O)</h3>
+          <div style="font-size: 1.6rem; font-weight: 800; color: var(--text-dark); margin: 0.25rem 0;">2.5 / 3.0 L</div>
+          <div class="macro-progress-bar"><div class="bar-water"></div></div>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Target: 8-10 glasses of pure water daily</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Healthy Plate Guide (CSS Flexbox Diagram) -->
+    <section class="container" style="padding: 1rem 1.5rem 3rem;">
+      <div class="card" style="background: linear-gradient(135deg, #f8fafc, #f1f5f9);">
+        <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem;">The Gold-Standard Balanced Plate Method</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+          No calorie counting required: organize your meal visually into simple portions.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <div style="flex: 2; min-width: 200px; background: #ecfdf5; border: 1px solid #a7f3d0; padding: 1.25rem; border-radius: var(--radius-md);">
+            <div style="font-weight: 700; color: #065f46; font-size: 1.1rem;">½ Vegetables & Greens</div>
+            <p style="font-size: 0.88rem; color: #047857; margin-top: 0.35rem;">
+              Spinach, broccoli, bell peppers, carrots, cucumber. Packed with antioxidants, fiber, and electrolytes.
+            </p>
+          </div>
+          <div style="flex: 1; min-width: 160px; background: #fef3c7; border: 1px solid #fde68a; padding: 1.25rem; border-radius: var(--radius-md);">
+            <div style="font-weight: 700; color: #92400e; font-size: 1.1rem;">¼ Lean Protein</div>
+            <p style="font-size: 0.88rem; color: #b45309; margin-top: 0.35rem;">
+              Tempeh, lentils, wild-caught fish, organic chicken, Greek yogurt.
+            </p>
+          </div>
+          <div style="flex: 1; min-width: 160px; background: #ede9fe; border: 1px solid #ddd6fe; padding: 1.25rem; border-radius: var(--radius-md);">
+            <div style="font-weight: 700; color: #5b21b6; font-size: 1.1rem;">¼ Whole Grains</div>
+            <p style="font-size: 0.88rem; color: #6d28d9; margin-top: 0.35rem;">
+              Brown basmati rice, quinoa, farro, whole wheat sourdough, millet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Recipe Gallery with Pure CSS Filter Tabs -->
+    <section class="container" style="padding-bottom: 5rem;">
+      <div class="section-header" style="text-align: left; margin-bottom: 1rem;">
+        <span class="section-tag">Chef & Nutritionist Approved</span>
+        <h2 style="font-size: 1.8rem; font-weight: 800;">Curated Healthy Recipes</h2>
+        <p style="color: var(--text-muted);">Wholesome meals designed to sustain physical vigor and mental stamina.</p>
+      </div>
+
+      <!-- Pure CSS Recipe Filter Tabs -->
+      <div class="filter-tabs-container">
+        <input type="radio" name="recipe-filter" id="tab-all" class="filter-radios" checked>
+        <input type="radio" name="recipe-filter" id="tab-breakfast" class="filter-radios">
+        <input type="radio" name="recipe-filter" id="tab-lunch" class="filter-radios">
+        <input type="radio" name="recipe-filter" id="tab-dinner" class="filter-radios">
+        <input type="radio" name="recipe-filter" id="tab-smoothie" class="filter-radios">
+
+        <div class="filter-nav">
+          <label for="tab-all" class="filter-label">All Recipes (6)</label>
+          <label for="tab-breakfast" class="filter-label">Breakfast</label>
+          <label for="tab-lunch" class="filter-label">Lunch</label>
+          <label for="tab-dinner" class="filter-label">Dinner</label>
+          <label for="tab-smoothie" class="filter-label">Smoothies & Tonics</label>
+        </div>
+      </div>
+
+      <!-- Recipe Grid -->
+      <div class="grid-3">
+        <!-- Recipe 1 -->
+        <article class="recipe-card">
+          <div class="recipe-image-placeholder">
+            🥑
+            <span class="badge badge-green recipe-badge">Breakfast</span>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-meta">
+              <span>⏱️ 15 Mins</span>
+              <span>🔥 380 Kcal</span>
+            </div>
+            <h3 class="recipe-title">Avocado & Poached Egg Sourdough</h3>
+            <p class="recipe-desc">
+              Toasted artisan sourdough loaded with mashed Haas avocado, pasture-raised poached eggs, chili flakes, and microgreens.
+            </p>
+            <div class="recipe-macros-pill">
+              <span><strong>Carbs:</strong> 34g</span>
+              <span><strong>Protein:</strong> 18g</span>
+              <span><strong>Fats:</strong> 19g</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 2 -->
+        <article class="recipe-card">
+          <div class="recipe-image-placeholder">
+            🥗
+            <span class="badge badge-amber recipe-badge">Lunch</span>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-meta">
+              <span>⏱️ 20 Mins</span>
+              <span>🔥 440 Kcal</span>
+            </div>
+            <h3 class="recipe-title">Mediterranean Quinoa Power Bowl</h3>
+            <p class="recipe-desc">
+              Fluffy organic quinoa tossed with cherry tomatoes, kalamata olives, crisp cucumbers, chickpeas, and lemon-tahini dressing.
+            </p>
+            <div class="recipe-macros-pill">
+              <span><strong>Carbs:</strong> 52g</span>
+              <span><strong>Protein:</strong> 16g</span>
+              <span><strong>Fats:</strong> 14g</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 3 -->
+        <article class="recipe-card">
+          <div class="recipe-image-placeholder">
+            🐟
+            <span class="badge badge-rose recipe-badge">Dinner</span>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-meta">
+              <span>⏱️ 25 Mins</span>
+              <span>🔥 510 Kcal</span>
+            </div>
+            <h3 class="recipe-title">Herb-Crusted Wild Salmon with Asparagus</h3>
+            <p class="recipe-desc">
+              Pan-seared Alaskan salmon rich in Omega-3 fatty acids, served alongside roasted asparagus spears and herb baby potatoes.
+            </p>
+            <div class="recipe-macros-pill">
+              <span><strong>Carbs:</strong> 22g</span>
+              <span><strong>Protein:</strong> 42g</span>
+              <span><strong>Fats:</strong> 24g</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 4 -->
+        <article class="recipe-card">
+          <div class="recipe-image-placeholder">
+            🥣
+            <span class="badge badge-green recipe-badge">Breakfast</span>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-meta">
+              <span>⏱️ 10 Mins Prep</span>
+              <span>🔥 320 Kcal</span>
+            </div>
+            <h3 class="recipe-title">Almond Chia Seed Overnight Pudding</h3>
+            <p class="recipe-desc">
+              Chia seeds soaked overnight in unsweetened almond milk, topped with wild blueberries, crushed walnuts, and pure Ceylon cinnamon.
+            </p>
+            <div class="recipe-macros-pill">
+              <span><strong>Carbs:</strong> 28g</span>
+              <span><strong>Protein:</strong> 11g</span>
+              <span><strong>Fats:</strong> 16g</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 5 -->
+        <article class="recipe-card">
+          <div class="recipe-image-placeholder">
+            🍲
+            <span class="badge badge-purple recipe-badge">Dinner</span>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-meta">
+              <span>⏱️ 35 Mins</span>
+              <span>🔥 390 Kcal</span>
+            </div>
+            <h3 class="recipe-title">Tuscan White Bean & Kale Pot</h3>
+            <p class="recipe-desc">
+              Hearty cannellini beans simmered with crushed San Marzano tomatoes, fresh curly kale, rosemary sprigs, and garlic cloves.
+            </p>
+            <div class="recipe-macros-pill">
+              <span><strong>Carbs:</strong> 58g</span>
+              <span><strong>Protein:</strong> 20g</span>
+              <span><strong>Fats:</strong> 6g</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recipe 6 -->
+        <article class="recipe-card">
+          <div class="recipe-image-placeholder">
+            🥤
+            <span class="badge badge-blue recipe-badge">Smoothie</span>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-meta">
+              <span>⏱️ 5 Mins</span>
+              <span>🔥 240 Kcal</span>
+            </div>
+            <h3 class="recipe-title">Matcha Green Antioxidant Elixir</h3>
+            <p class="recipe-desc">
+              Ceremonial grade matcha blended with baby spinach, frozen banana, coconut water, and a scoop of unflavored plant protein.
+            </p>
+            <div class="recipe-macros-pill">
+              <span><strong>Carbs:</strong> 31g</span>
+              <span><strong>Protein:</strong> 15g</span>
+              <span><strong>Fats:</strong> 3g</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #ffffff;">
+            <div class="logo-icon">🌿</div>
+            <div>Vitality<span>Pulse</span></div>
+          </div>
+          <p>
+            Empowering individuals through science-backed wellness, balanced nutrition, and structured daily healthy lifestyle planning.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Sections</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="nutrition.html">Nutrition & Diets</a></li>
+            <li><a href="fitness.html">Fitness & Workouts</a></li>
+            <li><a href="wellness.html">Mental Wellness & Sleep</a></li>
+            <li><a href="planner.html">Daily Planner & Goals</a></li>
+            <li><a href="contact.html">FAQ & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admin Portal</h4>
+          <ul class="footer-links">
+            <li><a href="admin/index.html">Admin Dashboard</a></li>
+            <li><a href="admin/nutrition-manage.html">Manage Nutrition</a></li>
+            <li><a href="admin/fitness-manage.html">Manage Workouts</a></li>
+            <li><a href="admin/users.html">User Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Nutrition Note</h4>
+          <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.6;">
+            Consult with a certified dietitian or physician before undertaking any extreme dietary restrictions.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Personal Wellness Dashboard. Responsive Web Technology Project.</p>
+        <p><a href="admin/nutrition-manage.html" style="color: var(--primary);">Go to Admin Nutrition Catalog →</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

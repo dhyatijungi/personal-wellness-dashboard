@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Planner & Goals | Personal Wellness Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/client.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon">🌿</div>
+        <div>Vitality<span>Pulse</span></div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+          <li><a href="fitness.html" class="nav-link">Fitness</a></li>
+          <li><a href="wellness.html" class="nav-link">Mental Wellness</a></li>
+          <li><a href="planner.html" class="nav-link active">Daily Planner</a></li>
+          <li><a href="contact.html" class="nav-link">FAQ & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="admin/index.html" class="admin-switch-btn" title="Open Admin Control Panel">
+          <span>⚙️</span> Admin Portal
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Daily Planner Hero -->
+    <section class="planner-hero">
+      <div class="container">
+        <div style="max-width: 720px;">
+          <span class="section-tag" style="background-color: #a7f3d0; color: #065f46;">Habit Formation</span>
+          <h1 style="font-size: 2.5rem; font-weight: 800; color: #1e293b; margin: 0.5rem 0 1rem;">
+            Structure Your Day for <span style="color: #059669;">Energy & Achievement</span>
+          </h1>
+          <p style="color: #64748b; font-size: 1.05rem;">
+            Intentional routines eliminate decision fatigue. Align your biological clock with your daily tasks,
+            track healthy micro-habits, and observe compound progress each week.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Planner & Habit Section -->
+    <section class="container">
+      <div class="planner-layout">
+        <!-- Left: Hourly Time-Blocked Routine -->
+        <div>
+          <div class="timeline-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+              <div>
+                <h2 style="font-size: 1.4rem; font-weight: 800;">Ideal Daily Wellness Schedule</h2>
+                <p style="font-size: 0.88rem; color: var(--text-muted);">Circadian-aligned daily routine blocks</p>
+              </div>
+              <span class="badge badge-green">Today: Active</span>
+            </div>
+
+            <!-- Time slot 1 -->
+            <div class="time-slot">
+              <div class="time-label">06:30 AM</div>
+              <div class="time-task">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <strong style="color: var(--text-dark);">Hydrate & Morning Sunlight Walk</strong>
+                  <span class="badge badge-amber">Morning Awakening</span>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem;">
+                  Drink 500ml water with a pinch of mineral salt. Get 10-15 mins of direct optic sunlight to calibrate the cortisol awakening response.
+                </p>
+              </div>
+            </div>
+
+            <!-- Time slot 2 -->
+            <div class="time-slot">
+              <div class="time-label">08:00 AM</div>
+              <div class="time-task">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <strong style="color: var(--text-dark);">High-Protein Nutrient-Dense Breakfast</strong>
+                  <span class="badge badge-green">Nutrition</span>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem;">
+                  Avocado & poached eggs or Chia pudding. Sustained amino acids stabilize mid-morning dopamine and glucose.
+                </p>
+              </div>
+            </div>
+
+            <!-- Time slot 3 -->
+            <div class="time-slot">
+              <div class="time-label">09:30 AM</div>
+              <div class="time-task">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <strong style="color: var(--text-dark);">Deep Academic / Cognitive Work Sprint</strong>
+                  <span class="badge badge-blue">Productivity</span>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem;">
+                  Phone in Do Not Disturb mode. 90-minute focused task completion block without multi-tasking.
+                </p>
+              </div>
+            </div>
+
+            <!-- Time slot 4 -->
+            <div class="time-slot">
+              <div class="time-label">01:00 PM</div>
+              <div class="time-task">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <strong style="color: var(--text-dark);">Mindful Lunch & Screen-Free Rest</strong>
+                  <span class="badge badge-amber">Recharge</span>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem;">
+                  Quinoa bowl with leafy greens. Step away from laptop monitors to allow eyes and nervous system to relax.
+                </p>
+              </div>
+            </div>
+
+            <!-- Time slot 5 -->
+            <div class="time-slot">
+              <div class="time-label">05:30 PM</div>
+              <div class="time-task">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <strong style="color: var(--text-dark);">Dynamic Cardio or Strength Training</strong>
+                  <span class="badge badge-rose">Fitness</span>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem;">
+                  Bodyweight calisthenics or HIIT routine. Peak body temperature makes late afternoon ideal for strength output.
+                </p>
+              </div>
+            </div>
+
+            <!-- Time slot 6 -->
+            <div class="time-slot">
+              <div class="time-label">10:15 PM</div>
+              <div class="time-task">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                  <strong style="color: var(--text-dark);">Digital Curfew & Breath Pacing</strong>
+                  <span class="badge badge-purple">Rest Prep</span>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem;">
+                  Dim ambient lighting. 4-4-4 Box breathing exercise in bed. Target sleep initiation by 10:45 PM.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Pure-CSS Habit Tracker & Weekly Goals -->
+        <div style="display: flex; flex-direction: column; gap: 1.75rem;">
+          <!-- Habit Tracker Checklist -->
+          <div class="card" id="habits">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="font-size: 1.2rem; font-weight: 800;">Today's Habit Checklist</h3>
+              <span class="badge badge-green">Pure CSS</span>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">
+              Click each checkmark as you accomplish your micro-commitments today:
+            </p>
+
+            <div class="habit-checkbox-list">
+              <label class="habit-item">
+                <input type="checkbox" checked>
+                <span>Drink 1L water upon waking</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox" checked>
+                <span>15 minutes morning sunlight</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox" checked>
+                <span>Balanced high-protein meal</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox">
+                <span>30 minutes workout / movement</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox">
+                <span>5-minute box breathing reset</span>
+              </label>
+              <label class="habit-item">
+                <input type="checkbox">
+                <span>Zero screen usage 45m before bed</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Weekly Goal Milestones Progress -->
+          <div class="card">
+            <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 1rem;">Weekly Milestones</h3>
+
+            <!-- Goal 1 -->
+            <div style="margin-bottom: 1.25rem;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.88rem; font-weight: 600;">
+                <span>Step Count (42,500 / 50k)</span>
+                <span style="color: #10b981;">85%</span>
+              </div>
+              <div class="macro-progress-bar">
+                <div style="width: 85%; height: 100%; background: #10b981;"></div>
+              </div>
+            </div>
+
+            <!-- Goal 2 -->
+            <div style="margin-bottom: 1.25rem;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.88rem; font-weight: 600;">
+                <span>Hydration (15.5 / 18 Liters)</span>
+                <span style="color: #06b6d4;">86%</span>
+              </div>
+              <div class="macro-progress-bar">
+                <div style="width: 86%; height: 100%; background: #06b6d4;"></div>
+              </div>
+            </div>
+
+            <!-- Goal 3 -->
+            <div style="margin-bottom: 1.25rem;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.88rem; font-weight: 600;">
+                <span>Workout Sessions (4 of 5)</span>
+                <span style="color: #f43f5e;">80%</span>
+              </div>
+              <div class="macro-progress-bar">
+                <div style="width: 80%; height: 100%; background: #f43f5e;"></div>
+              </div>
+            </div>
+
+            <!-- Goal 4 -->
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.88rem; font-weight: 600;">
+                <span>7+ Hours Sleep (5 of 7 Nights)</span>
+                <span style="color: #8b5cf6;">71%</span>
+              </div>
+              <div class="macro-progress-bar">
+                <div style="width: 71%; height: 100%; background: #8b5cf6;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #ffffff;">
+            <div class="logo-icon">🌿</div>
+            <div>Vitality<span>Pulse</span></div>
+          </div>
+          <p>
+            Structured daily scheduling, micro-habit tracking, and goal accountability engineered for balanced living.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Sections</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="nutrition.html">Nutrition & Diets</a></li>
+            <li><a href="fitness.html">Fitness & Workouts</a></li>
+            <li><a href="wellness.html">Mental Wellness & Sleep</a></li>
+            <li><a href="planner.html">Daily Planner & Goals</a></li>
+            <li><a href="contact.html">FAQ & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admin Portal</h4>
+          <ul class="footer-links">
+            <li><a href="admin/index.html">Admin Dashboard</a></li>
+            <li><a href="admin/users.html">User Directory</a></li>
+            <li><a href="admin/nutrition-manage.html">Manage Nutrition</a></li>
+            <li><a href="admin/fitness-manage.html">Manage Workouts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Habit Quote</h4>
+          <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.6;">
+            "We are what we repeatedly do. Excellence, then, is not an act, but a habit." — Will Durant
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Personal Wellness Dashboard. Responsive Web Technology Project.</p>
+        <p><a href="admin/index.html" style="color: var(--primary);">Go to Admin Dashboard Overview →</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

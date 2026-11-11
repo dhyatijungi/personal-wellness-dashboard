@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management | VitalityPulse Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- Sidebar Navigation -->
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo-badge">🌿</div>
+      <div class="admin-brand-title">
+        VitalityPulse
+        <span>Administrator</span>
+      </div>
+    </div>
+
+    <div class="admin-nav-group">
+      <div class="nav-category">Main Controls</div>
+      <nav class="admin-nav-links">
+        <a href="index.html" class="admin-nav-item">
+          <span class="icon">📊</span> Dashboard Overview
+        </a>
+        <a href="users.html" class="admin-nav-item active">
+          <span class="icon">👥</span> User Management
+          <span class="admin-badge-count">1,248</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Content Modules</div>
+      <nav class="admin-nav-links">
+        <a href="nutrition-manage.html" class="admin-nav-item">
+          <span class="icon">🥗</span> Nutrition & Meals
+          <span class="admin-badge-count">48</span>
+        </a>
+        <a href="fitness-manage.html" class="admin-nav-item">
+          <span class="icon">⚡</span> Fitness Library
+          <span class="admin-badge-count">32</span>
+        </a>
+        <a href="tips-manage.html" class="admin-nav-item">
+          <span class="icon">📝</span> Health Articles
+          <span class="admin-badge-count">24</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Community & Support</div>
+      <nav class="admin-nav-links">
+        <a href="feedback.html" class="admin-nav-item">
+          <span class="icon">💬</span> User Inquiries
+          <span class="admin-badge-count" style="background-color: #ef4444; color: #fff;">5</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="admin-sidebar-footer">
+      <div class="admin-avatar">AD</div>
+      <div class="admin-info">
+        <div class="admin-name">Admin Control</div>
+        <div class="admin-role">System Lead (Web Tech)</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <h1 class="admin-page-title">Member Directory & Profiles</h1>
+      </div>
+
+      <div class="topbar-right">
+        <div class="admin-search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="Search members by name or email...">
+        </div>
+        <a href="../index.html" class="view-client-btn">
+          <span>🌐</span> View Client Site
+        </a>
+      </div>
+    </header>
+
+    <main class="admin-container">
+      <!-- Search & Filters Strip -->
+      <div class="card" style="padding: 1.25rem 1.75rem; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+          <input type="text" placeholder="Filter by keyword..." class="form-control" style="width: 220px; padding: 0.5rem 0.85rem; font-size: 0.85rem;">
+          
+          <select class="form-control" style="width: 170px; padding: 0.5rem 0.85rem; font-size: 0.85rem;">
+            <option value="">All Health Goals</option>
+            <option value="cardio">Cardiovascular Health</option>
+            <option value="muscle">Muscle Gain & Tone</option>
+            <option value="sleep">Sleep & Recovery</option>
+            <option value="weight">Mindful Weight Loss</option>
+          </select>
+
+          <select class="form-control" style="width: 140px; padding: 0.5rem 0.85rem; font-size: 0.85rem;">
+            <option value="">All Statuses</option>
+            <option value="active">Active</option>
+            <option value="pending">Needs Review</option>
+            <option value="inactive">Inactive</option>
+          </select>
+        </div>
+
+        <div>
+          <!-- Link to trigger pure CSS Modal dialog -->
+          <a href="#add-user-modal" class="btn btn-primary btn-sm">
+            + Add New Member
+          </a>
+        </div>
+      </div>
+
+      <!-- Users Table -->
+      <section class="table-card">
+        <div class="table-header-bar">
+          <div>
+            <h3 class="table-title">All Registered Wellness Members (1,248)</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Showing page 1 of 125</p>
+          </div>
+        </div>
+
+        <div class="responsive-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Member</th>
+                <th>Primary Health Goal</th>
+                <th>Daily Habit Streak</th>
+                <th>Membership</th>
+                <th>Status</th>
+                <th>Join Date</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#dbeafe; color:#1e40af;">SC</div>
+                    <div>
+                      <strong>Sarah Connor</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">sarah.c@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Strength & Mobility</td>
+                <td><strong style="color: #059669;">🔥 28 Days</strong></td>
+                <td><span class="badge badge-purple">Pro Member</span></td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>Oct 12, 2026</td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#fef3c7; color:#b45309;">MR</div>
+                    <div>
+                      <strong>Marcus Rodriguez</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">marcus.r@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>HIIT & Calorie Burn</td>
+                <td><strong style="color: #059669;">🔥 14 Days</strong></td>
+                <td><span class="badge badge-blue">Standard</span></td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>Oct 18, 2026</td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#ffe4e6; color:#be123c;">EW</div>
+                    <div>
+                      <strong>Elena Wright</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">elena.w@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Circadian Sleep Recovery</td>
+                <td><strong style="color: #d97706;">🔥 6 Days</strong></td>
+                <td><span class="badge badge-purple">Pro Member</span></td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>Nov 01, 2026</td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#f1f5f9; color:#475569;">AL</div>
+                    <div>
+                      <strong>Alexander Lee</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">alex.lee@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Desk Ergonomics Reset</td>
+                <td><span style="color: #94a3b8;">2 Days</span></td>
+                <td><span class="badge badge-blue">Standard</span></td>
+                <td><span class="badge badge-amber">Needs Review</span></td>
+                <td>Nov 04, 2026</td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#ede9fe; color:#6d28d9;">KP</div>
+                    <div>
+                      <strong>Kavita Patel</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">kavita.p@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Mindful Nutrition & Meditation</td>
+                <td><strong style="color: #059669;">🔥 42 Days</strong></td>
+                <td><span class="badge badge-purple">Pro Member</span></td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>Sep 24, 2026</td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#ecfdf5; color:#047857;">JT</div>
+                    <div>
+                      <strong>Jordan Taylor</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">jordan.t@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Cardio & Marathon Prep</td>
+                <td><span style="color: #94a3b8;">0 Days (Paused)</span></td>
+                <td><span class="badge badge-blue">Standard</span></td>
+                <td><span class="badge" style="background:#f1f5f9; color:#64748b;">Inactive</span></td>
+                <td>Aug 11, 2026</td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination-bar">
+          <span>Showing 6 of 1,248 members</span>
+          <div class="pagination-controls">
+            <span class="page-num active">1</span>
+            <span class="page-num">2</span>
+            <span class="page-num">3</span>
+            <span class="page-num">...</span>
+            <span class="page-num">125</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Pure CSS Modal Dialog for Adding a User (Targeted via #add-user-modal) -->
+  <div id="add-user-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">+ Register New Member Profile</h3>
+        <a href="#" class="modal-close-btn" title="Close modal">&times;</a>
+      </div>
+
+      <form action="users.html" method="get">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-control" placeholder="e.g. Maya Chen" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="form-control" placeholder="e.g. maya@example.com" required>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Primary Goal</label>
+              <select class="form-control">
+                <option>Cardiovascular Health</option>
+                <option>Muscle Hypertrophy</option>
+                <option>Circadian Sleep Recovery</option>
+                <option>Mindful Nutrition</option>
+                <option>Desk Ergonomics</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Membership Tier</label>
+              <select class="form-control">
+                <option>Standard Member</option>
+                <option>Pro Member</option>
+                <option>VIP Student Plan</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Daily Calorie Target (kcal)</label>
+            <input type="number" class="form-control" placeholder="e.g. 2100" value="2000">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline btn-sm">Cancel</a>
+          <button type="submit" class="btn btn-primary btn-sm">Save Member Record</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

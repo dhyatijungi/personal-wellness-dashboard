@@ -1,0 +1,372 @@
+/* ==========================================================================
+   Personal Wellness Dashboard - Exact Box Wireframes Stylesheet
+   Subject: Web Technology – UI Wireframes (Exact Boxed Structure)
+   Style: High-Contrast Geometric Box Wireframe (Black on White)
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8fafc;
+  color: #000000;
+  padding: 20px;
+  line-height: 1.4;
+}
+
+.wireframe-container {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+}
+
+/* Page Navigation / Title */
+.wf-doc-header {
+  border: 2px solid #000;
+  background: #fff;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+
+.wf-doc-header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.wf-doc-header p {
+  font-size: 13px;
+  color: #444;
+}
+
+.wf-page-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.wf-page-btn {
+  border: 1.5px solid #000;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+}
+
+.wf-page-btn:hover, .wf-page-btn.active {
+  background: #000;
+  color: #fff;
+}
+
+/* ==========================================================================
+   Exact Browser Frame Box
+   ========================================================================== */
+.wf-browser-outer {
+  background: #ffffff;
+  border: 2px solid #000000;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.wf-browser-topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.wf-nav-arrows {
+  font-size: 16px;
+  letter-spacing: 5px;
+  font-family: monospace;
+  font-weight: bold;
+  user-select: none;
+}
+
+.wf-address-bar {
+  flex-grow: 1;
+  border: 1.5px solid #000000;
+  padding: 5px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  background: #ffffff;
+}
+
+/* Main Viewport Container Box */
+.wf-main-box {
+  border: 1.5px solid #000000;
+  padding: 14px;
+  display: flex;
+  gap: 14px;
+  background: #ffffff;
+  min-height: 720px;
+}
+
+/* ==========================================================================
+   Admin Left Sidebar (Stacked Separate Boxes)
+   ========================================================================== */
+.wf-admin-side-boxes {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.wf-box-admin-title {
+  border: 1.5px solid #000000;
+  padding: 14px 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  background: #ffffff;
+}
+
+.wf-box-menu-item {
+  border: 1.5px solid #000000;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #ffffff;
+  text-align: left;
+}
+
+.wf-box-menu-item.active {
+  font-weight: bold;
+  background: #f1f5f9;
+}
+
+/* ==========================================================================
+   Admin Right Main Content (Separate Boxes)
+   ========================================================================== */
+.wf-admin-right-boxes {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Top Heading Box */
+.wf-heading-box {
+  border: 1.5px solid #000000;
+  padding: 16px 18px;
+  background: #ffffff;
+}
+
+.wf-heading-box h2 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.wf-heading-box p {
+  font-size: 13px;
+  color: #333333;
+}
+
+/* Form Container Box */
+.wf-form-main-box {
+  border: 1.5px solid #000000;
+  padding: 18px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.wf-field-label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.wf-input-box-single {
+  border: 1.5px solid #000000;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #666666;
+  background: #ffffff;
+  width: 100%;
+}
+
+/* Three Tall Boxes Side-by-Side (Exactly like Event Date / Start Time / End Time) */
+.wf-three-column-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.wf-tall-box {
+  border: 1.5px solid #000000;
+  padding: 12px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #ffffff;
+}
+
+.wf-tall-box .inner-input-box {
+  border: 1.5px solid #000000;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: #444444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+}
+
+/* Dropdown select box */
+.wf-dropdown-box {
+  border: 1.5px solid #000000;
+  padding: 8px 12px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+}
+
+/* Textarea Box */
+.wf-textarea-box {
+  border: 1.5px solid #000000;
+  min-height: 85px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #666666;
+  background: #ffffff;
+}
+
+/* Buttons */
+.wf-action-btn-box {
+  display: inline-block;
+  border: 1.5px solid #000000;
+  padding: 9px 22px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.wf-action-btn-box.outline {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* ==========================================================================
+   Client Side Layouts (Top Nav Box + Content Boxes)
+   ========================================================================== */
+.wf-client-main-box {
+  border: 1.5px solid #000000;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #ffffff;
+}
+
+.wf-client-top-nav-box {
+  border: 1.5px solid #000000;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+}
+
+.wf-client-nav-items {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.wf-client-nav-item-box {
+  border: 1px solid #000;
+  padding: 4px 10px;
+}
+
+.wf-client-nav-item-box.active {
+  background: #000;
+  color: #fff;
+}
+
+.wf-hero-banner-box {
+  border: 1.5px solid #000000;
+  padding: 24px 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 18px;
+  align-items: center;
+  background: #ffffff;
+}
+
+.wf-vitality-gauge-box {
+  border: 1.5px solid #000000;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #ffffff;
+}
+
+.wf-circle-box {
+  width: 75px;
+  height: 75px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin: 4px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wf-client-four-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.wf-feature-pillar-box {
+  border: 1.5px solid #000000;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #ffffff;
+}
+
+.wf-feature-pillar-box h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wf-feature-pillar-box p {
+  font-size: 12px;
+  color: #444;
+}
+
+/* Captions */
+p.wf-fig-caption {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}

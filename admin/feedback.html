@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Inquiries & Messages | VitalityPulse Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- Sidebar Navigation -->
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo-badge">🌿</div>
+      <div class="admin-brand-title">
+        VitalityPulse
+        <span>Administrator</span>
+      </div>
+    </div>
+
+    <div class="admin-nav-group">
+      <div class="nav-category">Main Controls</div>
+      <nav class="admin-nav-links">
+        <a href="index.html" class="admin-nav-item">
+          <span class="icon">📊</span> Dashboard Overview
+        </a>
+        <a href="users.html" class="admin-nav-item">
+          <span class="icon">👥</span> User Management
+          <span class="admin-badge-count">1,248</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Content Modules</div>
+      <nav class="admin-nav-links">
+        <a href="nutrition-manage.html" class="admin-nav-item">
+          <span class="icon">🥗</span> Nutrition & Meals
+          <span class="admin-badge-count">48</span>
+        </a>
+        <a href="fitness-manage.html" class="admin-nav-item">
+          <span class="icon">⚡</span> Fitness Library
+          <span class="admin-badge-count">32</span>
+        </a>
+        <a href="tips-manage.html" class="admin-nav-item">
+          <span class="icon">📝</span> Health Articles
+          <span class="admin-badge-count">24</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Community & Support</div>
+      <nav class="admin-nav-links">
+        <a href="feedback.html" class="admin-nav-item active">
+          <span class="icon">💬</span> User Inquiries
+          <span class="admin-badge-count" style="background-color: #ef4444; color: #fff;">5</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="admin-sidebar-footer">
+      <div class="admin-avatar">AD</div>
+      <div class="admin-info">
+        <div class="admin-name">Admin Control</div>
+        <div class="admin-role">System Lead (Web Tech)</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <h1 class="admin-page-title">User Inquiries & Contact Submissions</h1>
+      </div>
+
+      <div class="topbar-right">
+        <div class="admin-search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="Search inquiry text, sender...">
+        </div>
+        <a href="../contact.html" class="view-client-btn">
+          <span>🌐</span> View Contact Page
+        </a>
+      </div>
+    </header>
+
+    <main class="admin-container">
+      <!-- Inquiries Metric KPI Row -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Unread Messages</span>
+            <div class="kpi-icon" style="background:#fee2e2; color:#ef4444;">📬</div>
+          </div>
+          <div class="kpi-value" style="color: #ef4444;">5 New</div>
+          <div style="font-size: 0.8rem; color: #b91c1c;">Requires admin response</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Resolved / Replied</span>
+            <div class="kpi-icon" style="background:#ecfdf5; color:#059669;">✓</div>
+          </div>
+          <div class="kpi-value">23 Solved</div>
+          <div style="font-size: 0.8rem; color: #059669;">82% resolution rate</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Priority Flagged</span>
+            <div class="kpi-icon" style="background:#fef3c7; color:#d97706;">⚠️</div>
+          </div>
+          <div class="kpi-value">2 Urgent</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Urgent wellness advice</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Avg Response Time</span>
+            <div class="kpi-icon" style="background:#dbeafe; color:#2563eb;">⚡</div>
+          </div>
+          <div class="kpi-value">3.2 Hours</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Well within SLA targets</div>
+        </div>
+      </section>
+
+      <!-- Inquiries Table -->
+      <section class="table-card">
+        <div class="table-header-bar">
+          <div>
+            <h3 class="table-title">Contact Inquiries Inbox (28)</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Messages submitted from the public FAQ & Contact form</p>
+          </div>
+          <div class="table-actions">
+            <span class="badge badge-rose">5 Action Required</span>
+          </div>
+        </div>
+
+        <div class="responsive-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Sender</th>
+                <th>Inquiry Topic</th>
+                <th>Message Excerpt</th>
+                <th>Priority</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #fffbf0;">
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#fed7aa; color:#9a3412;">SL</div>
+                    <div>
+                      <strong>Samantha Long</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">samantha@university.edu</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-purple">Web Tech Subject</span></td>
+                <td>"Can we utilize the 90-minute sleep cycle calculator logic for our semester project presentation?"</td>
+                <td><span class="badge badge-amber">Standard</span></td>
+                <td>Today, 2:15 PM</td>
+                <td><span class="badge badge-rose">New</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#view-message-modal" class="table-btn" style="background:#10b981; color:#fff; border-color:#10b981;">Open</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr style="background-color: #fffbf0;">
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#fecdd3; color:#9f1239;">DK</div>
+                    <div>
+                      <strong>Derek Kelly</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">derek.k@fitness.org</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-rose">Fitness Routine</span></td>
+                <td>"Experiencing mild shoulder impingement during standard pushups; what low-impact regression do you suggest?"</td>
+                <td><span class="badge badge-rose">High Priority</span></td>
+                <td>Today, 11:30 AM</td>
+                <td><span class="badge badge-rose">New</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#view-message-modal" class="table-btn" style="background:#10b981; color:#fff; border-color:#10b981;">Open</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr style="background-color: #fffbf0;">
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#bbf7d0; color:#14532d;">AN</div>
+                    <div>
+                      <strong>Amina Noor</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">amina.n@healthmail.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-amber">Nutrition & Diet</span></td>
+                <td>"Are the macronutrient ratios in the Quinoa bowl suitable for someone on a strict plant-based diabetes regimen?"</td>
+                <td><span class="badge badge-amber">Standard</span></td>
+                <td>Yesterday</td>
+                <td><span class="badge badge-rose">New</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#view-message-modal" class="table-btn" style="background:#10b981; color:#fff; border-color:#10b981;">Open</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#e2e8f0; color:#334155;">RT</div>
+                    <div>
+                      <strong>Robert Thorne</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">robert.t@outlook.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-blue">Circadian Sleep</span></td>
+                <td>"Thank you for the 4-4-4 box breathing pacer, it significantly reduced my pre-exam tachycardia."</td>
+                <td><span class="badge badge-blue">Feedback</span></td>
+                <td>Nov 09, 2026</td>
+                <td><span class="badge badge-green">Replied</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#view-message-modal" class="table-btn">View</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#e0e7ff; color:#3730a3;">LC</div>
+                    <div>
+                      <strong>Lily Chen</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">lily.c@domain.edu</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-purple">Daily Planner</span></td>
+                <td>"Can we print the daily planner schedule as a clean physical PDF checklist for student desks?"</td>
+                <td><span class="badge badge-amber">Standard</span></td>
+                <td>Nov 08, 2026</td>
+                <td><span class="badge badge-green">Replied</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#view-message-modal" class="table-btn">View</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination-bar">
+          <span>Showing 5 of 28 inquiries</span>
+          <div class="pagination-controls">
+            <span class="page-num active">1</span>
+            <span class="page-num">2</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Pure CSS Modal Dialog for Viewing an Inquiry (Targeted via #view-message-modal) -->
+  <div id="view-message-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Inquiry Details & Quick Reply</h3>
+        <a href="#" class="modal-close-btn" title="Close modal">&times;</a>
+      </div>
+
+      <form action="feedback.html" method="get">
+        <div class="modal-body">
+          <div style="background: #f8fafc; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <strong>Samantha Long (samantha@university.edu)</strong>
+              <span class="badge badge-amber">Nov 11, 2026</span>
+            </div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+              <strong>Topic:</strong> Web Technology Subject Inquiry
+            </div>
+            <p style="font-size: 0.92rem; color: var(--text-dark); line-height: 1.5;">
+              "Can we utilize the 90-minute sleep cycle calculator logic for our semester project presentation? The pure CSS architecture and responsive design is exactly what our curriculum requires!"
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Draft Administrator Response</label>
+            <textarea class="form-control" rows="4" placeholder="Type official wellness response here...">Hello Samantha,
+
+Yes, absolutely! The Personal Wellness Dashboard was designed specifically to illustrate responsive web design, semantic HTML5, and modern CSS3 for Web Technology. Feel free to reference the architectural structure.</textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Update Ticket Status</label>
+            <select class="form-control">
+              <option selected>Mark as Replied & Close</option>
+              <option>Keep Pending</option>
+              <option>Archive to History</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline btn-sm">Close</a>
+          <button type="submit" class="btn btn-primary btn-sm">Send Official Reply</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

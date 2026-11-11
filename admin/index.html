@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | VitalityPulse Management</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- Sidebar Navigation -->
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo-badge">🌿</div>
+      <div class="admin-brand-title">
+        VitalityPulse
+        <span>Administrator</span>
+      </div>
+    </div>
+
+    <div class="admin-nav-group">
+      <div class="nav-category">Main Controls</div>
+      <nav class="admin-nav-links">
+        <a href="index.html" class="admin-nav-item active">
+          <span class="icon">📊</span> Dashboard Overview
+        </a>
+        <a href="users.html" class="admin-nav-item">
+          <span class="icon">👥</span> User Management
+          <span class="admin-badge-count">1,248</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Content Modules</div>
+      <nav class="admin-nav-links">
+        <a href="nutrition-manage.html" class="admin-nav-item">
+          <span class="icon">🥗</span> Nutrition & Meals
+          <span class="admin-badge-count">48</span>
+        </a>
+        <a href="fitness-manage.html" class="admin-nav-item">
+          <span class="icon">⚡</span> Fitness Library
+          <span class="admin-badge-count">32</span>
+        </a>
+        <a href="tips-manage.html" class="admin-nav-item">
+          <span class="icon">📝</span> Health Articles
+          <span class="admin-badge-count">24</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Community & Support</div>
+      <nav class="admin-nav-links">
+        <a href="feedback.html" class="admin-nav-item">
+          <span class="icon">💬</span> User Inquiries
+          <span class="admin-badge-count" style="background-color: #ef4444; color: #fff;">5</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Admin Profile Footer -->
+    <div class="admin-sidebar-footer">
+      <div class="admin-avatar">AD</div>
+      <div class="admin-info">
+        <div class="admin-name">Admin Control</div>
+        <div class="admin-role">System Lead (Web Tech)</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Dashboard Wrapper -->
+  <div class="admin-main">
+    <!-- Topbar -->
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <h1 class="admin-page-title">Executive Wellness Overview</h1>
+      </div>
+
+      <div class="topbar-right">
+        <div class="admin-search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="Search members, recipes, workouts...">
+        </div>
+        <a href="../index.html" class="view-client-btn" title="Return to public website">
+          <span>🌐</span> View Client Site
+        </a>
+      </div>
+    </header>
+
+    <!-- Admin Content Container -->
+    <main class="admin-container">
+      <!-- 4 KPI Metrics -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Active Users</span>
+            <div class="kpi-icon" style="background:#ecfdf5; color:#059669;">👥</div>
+          </div>
+          <div class="kpi-value">1,248</div>
+          <div class="kpi-trend trend-up">
+            <span>↑ 14.8%</span> from last month
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Daily Habits Logged</span>
+            <div class="kpi-icon" style="background:#ede9fe; color:#7c3aed;">🎯</div>
+          </div>
+          <div class="kpi-value">8,924</div>
+          <div class="kpi-trend trend-up">
+            <span>↑ 22.3%</span> weekly engagement
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Workouts Completed</span>
+            <div class="kpi-icon" style="background:#ffe4e6; color:#e11d48;">⚡</div>
+          </div>
+          <div class="kpi-value">3,410</div>
+          <div class="kpi-trend trend-up">
+            <span>↑ 8.1%</span> active routines
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Pending Inquiries</span>
+            <div class="kpi-icon" style="background:#fef3c7; color:#d97706;">💬</div>
+          </div>
+          <div class="kpi-value">5 New</div>
+          <div class="kpi-trend" style="color: #64748b;">
+            <span>● 24h</span> average turnaround
+          </div>
+        </div>
+      </section>
+
+      <!-- 7-Day User Engagement Pure CSS Bar Chart -->
+      <section class="chart-card">
+        <div class="chart-header">
+          <div>
+            <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-dark);">Weekly Habit & Activity Completion</h2>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Total wellness routines completed across Monday - Sunday</p>
+          </div>
+          <span class="badge badge-green">Realtime Data</span>
+        </div>
+
+        <!-- Pure CSS Bar Chart with Flexbox -->
+        <div class="css-bar-chart">
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 65%;" data-value="1,240"></div>
+            <span class="bar-day">Mon</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 82%;" data-value="1,580"></div>
+            <span class="bar-day">Tue</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 74%;" data-value="1,410"></div>
+            <span class="bar-day">Wed</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 90%;" data-value="1,720"></div>
+            <span class="bar-day">Thu</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 96%;" data-value="1,850"></div>
+            <span class="bar-day">Fri</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 55%;" data-value="1,050"></div>
+            <span class="bar-day">Sat</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 70%;" data-value="1,330"></div>
+            <span class="bar-day">Sun</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent User Registrations & Quick Actions -->
+      <section class="table-card">
+        <div class="table-header-bar">
+          <div>
+            <h3 class="table-title">Recent User Registrations & Health Status</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Newly enrolled members tracking personalized wellness plans</p>
+          </div>
+          <div class="table-actions">
+            <a href="users.html#add-user-modal" class="btn btn-primary btn-sm">+ Add New Member</a>
+          </div>
+        </div>
+
+        <div class="responsive-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Member Name</th>
+                <th>Assigned Plan</th>
+                <th>Daily Habit Score</th>
+                <th>Membership</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#dbeafe; color:#1e40af;">SC</div>
+                    <div>
+                      <strong>Sarah Connor</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">sarah.c@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Strength & Mobility</td>
+                <td>
+                  <div style="font-weight: 700; color: #059669;">92%</div>
+                </td>
+                <td><span class="badge badge-purple">Pro Member</span></td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="users.html" class="table-btn">View</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#fef3c7; color:#b45309;">MR</div>
+                    <div>
+                      <strong>Marcus Rodriguez</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">marcus.r@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Mediterranean Diet + HIIT</td>
+                <td>
+                  <div style="font-weight: 700; color: #059669;">86%</div>
+                </td>
+                <td><span class="badge badge-blue">Standard</span></td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="users.html" class="table-btn">View</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#ffe4e6; color:#be123c;">EW</div>
+                    <div>
+                      <strong>Elena Wright</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">elena.w@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Circadian Sleep & Yoga</td>
+                <td>
+                  <div style="font-weight: 700; color: #d97706;">68%</div>
+                </td>
+                <td><span class="badge badge-purple">Pro Member</span></td>
+                <td><span class="badge badge-green">Active</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="users.html" class="table-btn">View</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="user-avatar-small" style="background:#f1f5f9; color:#475569;">AL</div>
+                    <div>
+                      <strong>Alexander Lee</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted);">alex.lee@wellness.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td>Desk Ergonomics Reset</td>
+                <td>
+                  <div style="font-weight: 700; color: #94a3b8;">45%</div>
+                </td>
+                <td><span class="badge badge-blue">Standard</span></td>
+                <td><span class="badge badge-amber">Needs Review</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="users.html" class="table-btn">View</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination-bar">
+          <span>Showing 4 of 1,248 registered members</span>
+          <a href="users.html" style="color: var(--primary); font-weight: 700;">View All Members in Directory →</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

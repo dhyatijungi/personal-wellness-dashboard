@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Nutrition & Recipes | VitalityPulse Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- Sidebar Navigation -->
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo-badge">🌿</div>
+      <div class="admin-brand-title">
+        VitalityPulse
+        <span>Administrator</span>
+      </div>
+    </div>
+
+    <div class="admin-nav-group">
+      <div class="nav-category">Main Controls</div>
+      <nav class="admin-nav-links">
+        <a href="index.html" class="admin-nav-item">
+          <span class="icon">📊</span> Dashboard Overview
+        </a>
+        <a href="users.html" class="admin-nav-item">
+          <span class="icon">👥</span> User Management
+          <span class="admin-badge-count">1,248</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Content Modules</div>
+      <nav class="admin-nav-links">
+        <a href="nutrition-manage.html" class="admin-nav-item active">
+          <span class="icon">🥗</span> Nutrition & Meals
+          <span class="admin-badge-count">48</span>
+        </a>
+        <a href="fitness-manage.html" class="admin-nav-item">
+          <span class="icon">⚡</span> Fitness Library
+          <span class="admin-badge-count">32</span>
+        </a>
+        <a href="tips-manage.html" class="admin-nav-item">
+          <span class="icon">📝</span> Health Articles
+          <span class="admin-badge-count">24</span>
+        </a>
+      </nav>
+
+      <div class="nav-category">Community & Support</div>
+      <nav class="admin-nav-links">
+        <a href="feedback.html" class="admin-nav-item">
+          <span class="icon">💬</span> User Inquiries
+          <span class="admin-badge-count" style="background-color: #ef4444; color: #fff;">5</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="admin-sidebar-footer">
+      <div class="admin-avatar">AD</div>
+      <div class="admin-info">
+        <div class="admin-name">Admin Control</div>
+        <div class="admin-role">System Lead (Web Tech)</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <h1 class="admin-page-title">Nutrition & Meal Plan Catalog</h1>
+      </div>
+
+      <div class="topbar-right">
+        <div class="admin-search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="Search recipe or ingredient...">
+        </div>
+        <a href="../nutrition.html" class="view-client-btn">
+          <span>🌐</span> View Nutrition Page
+        </a>
+      </div>
+    </header>
+
+    <main class="admin-container">
+      <!-- Quick Metric Counters -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Total Recipes</span>
+            <div class="kpi-icon" style="background:#fef3c7; color:#d97706;">🥗</div>
+          </div>
+          <div class="kpi-value">48</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Across 4 meal categories</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Average Calorie Density</span>
+            <div class="kpi-icon" style="background:#ecfdf5; color:#059669;">🔥</div>
+          </div>
+          <div class="kpi-value">385 kcal</div>
+          <div style="font-size: 0.8rem; color: #059669;">Balanced nutrient ratio</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Plant-Based / Vegan</span>
+            <div class="kpi-icon" style="background:#dbeafe; color:#2563eb;">🌱</div>
+          </div>
+          <div class="kpi-value">22 Items</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">45% of total catalog</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-label">Published Status</span>
+            <div class="kpi-icon" style="background:#ede9fe; color:#7c3aed;">✓</div>
+          </div>
+          <div class="kpi-value">45 Live</div>
+          <div style="font-size: 0.8rem; color: #d97706;">3 Drafts under review</div>
+        </div>
+      </section>
+
+      <!-- Recipe Management Table -->
+      <section class="table-card">
+        <div class="table-header-bar">
+          <div>
+            <h3 class="table-title">Recipe Database & Nutritional Breakdown</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Manage client-facing dietary plans and macro metrics</p>
+          </div>
+          <div class="table-actions">
+            <a href="#add-recipe-modal" class="btn btn-primary btn-sm">+ Add New Recipe</a>
+          </div>
+        </div>
+
+        <div class="responsive-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Recipe Title</th>
+                <th>Category</th>
+                <th>Calories</th>
+                <th>Macro Split (P / C / F)</th>
+                <th>Dietary Tag</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Avocado & Poached Egg Toast</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Prep: 15 Mins | Artisan sourdough base</div>
+                </td>
+                <td><span class="badge badge-amber">Breakfast</span></td>
+                <td><strong>380 kcal</strong></td>
+                <td>18g P / 34g C / 19g F</td>
+                <td><span class="badge badge-green">Vegetarian</span></td>
+                <td><span class="badge badge-green">Published</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Mediterranean Quinoa Bowl</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Prep: 20 Mins | Kalamata olives & tahini</div>
+                </td>
+                <td><span class="badge badge-blue">Lunch</span></td>
+                <td><strong>440 kcal</strong></td>
+                <td>16g P / 52g C / 14g F</td>
+                <td><span class="badge badge-purple">Vegan / Gluten-Free</span></td>
+                <td><span class="badge badge-green">Published</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Herb-Crusted Wild Salmon</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Prep: 25 Mins | Asparagus & baby potatoes</div>
+                </td>
+                <td><span class="badge badge-rose">Dinner</span></td>
+                <td><strong>510 kcal</strong></td>
+                <td>42g P / 22g C / 24g F</td>
+                <td><span class="badge badge-blue">Keto Friendly</span></td>
+                <td><span class="badge badge-green">Published</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Almond Chia Seed Pudding</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Prep: 10 Mins | Wild blueberries & walnuts</div>
+                </td>
+                <td><span class="badge badge-amber">Breakfast</span></td>
+                <td><strong>320 kcal</strong></td>
+                <td>11g P / 28g C / 16g F</td>
+                <td><span class="badge badge-green">Plant-Based</span></td>
+                <td><span class="badge badge-green">Published</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Matcha Green Antioxidant Elixir</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Prep: 5 Mins | Ceremonial grade tea blend</div>
+                </td>
+                <td><span class="badge badge-blue">Smoothie</span></td>
+                <td><strong>240 kcal</strong></td>
+                <td>15g P / 31g C / 3g F</td>
+                <td><span class="badge badge-purple">Antioxidant</span></td>
+                <td><span class="badge badge-green">Published</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <strong>Golden Turmeric Lentil Soup</strong>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Prep: 30 Mins | Anti-inflammatory spices</div>
+                </td>
+                <td><span class="badge badge-rose">Dinner</span></td>
+                <td><strong>350 kcal</strong></td>
+                <td>19g P / 48g C / 8g F</td>
+                <td><span class="badge badge-green">Vegan</span></td>
+                <td><span class="badge badge-amber">Draft</span></td>
+                <td>
+                  <div class="action-btn-group">
+                    <a href="#edit-modal" class="table-btn">Edit</a>
+                    <a href="#delete-modal" class="table-btn table-btn-danger">Delete</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination-bar">
+          <span>Showing 6 of 48 active recipes</span>
+          <div class="pagination-controls">
+            <span class="page-num active">1</span>
+            <span class="page-num">2</span>
+            <span class="page-num">3</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Pure CSS Modal Dialog for Adding a Recipe (Targeted via #add-recipe-modal) -->
+  <div id="add-recipe-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">+ Add New Wholesome Recipe</h3>
+        <a href="#" class="modal-close-btn" title="Close modal">&times;</a>
+      </div>
+
+      <form action="nutrition-manage.html" method="get">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Recipe Title *</label>
+            <input type="text" class="form-control" placeholder="e.g. Berry Spinach Protein Bowl" required>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Meal Category</label>
+              <select class="form-control">
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Dinner</option>
+                <option>Smoothies & Tonics</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Est. Calories (kcal)</label>
+              <input type="number" class="form-control" placeholder="e.g. 420" required>
+            </div>
+          </div>
+
+          <div class="grid-3" style="gap: 0.75rem;">
+            <div class="form-group">
+              <label class="form-label">Protein (g)</label>
+              <input type="number" class="form-control" placeholder="25">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Carbs (g)</label>
+              <input type="number" class="form-control" placeholder="45">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Fats (g)</label>
+              <input type="number" class="form-control" placeholder="12">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Dietary Tags</label>
+            <input type="text" class="form-control" placeholder="e.g. Vegan, Gluten-Free, High Fiber">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Preparation Directions Summary</label>
+            <textarea class="form-control" placeholder="Brief outline of recipe steps..." rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline btn-sm">Cancel</a>
+          <button type="submit" class="btn btn-primary btn-sm">Publish Recipe to Site</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

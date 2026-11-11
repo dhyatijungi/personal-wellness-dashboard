@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness & Workout Routines | Personal Wellness Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/client.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon">🌿</div>
+        <div>Vitality<span>Pulse</span></div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+          <li><a href="fitness.html" class="nav-link active">Fitness</a></li>
+          <li><a href="wellness.html" class="nav-link">Mental Wellness</a></li>
+          <li><a href="planner.html" class="nav-link">Daily Planner</a></li>
+          <li><a href="contact.html" class="nav-link">FAQ & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="admin/fitness-manage.html" class="admin-switch-btn" title="Manage Fitness Workouts">
+          <span>⚙️</span> Admin Portal
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Fitness Hero -->
+    <section class="fitness-hero">
+      <div class="container">
+        <div style="max-width: 720px;">
+          <span class="section-tag" style="background-color: #ffe4e6; color: #be123c;">Active Longevity</span>
+          <h1 style="font-size: 2.5rem; font-weight: 800; color: #1e293b; margin: 0.5rem 0 1rem;">
+            Movement That Builds <span style="color: #e11d48;">Strength & Resilience</span>
+          </h1>
+          <p style="color: #64748b; font-size: 1.05rem;">
+            Whether you have 10 minutes between study sessions or an hour for dedicated strength training,
+            consistent movement rejuvenates joints, elevates mood, and accelerates cardiovascular endurance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Heart Rate Target Zones & Quick Stats -->
+    <section class="container" style="padding: 3rem 1.5rem 1.5rem;">
+      <div class="grid-4">
+        <div class="card" style="border-left: 4px solid #10b981;">
+          <span class="badge badge-green">Zone 1 & 2</span>
+          <h4 style="margin: 0.5rem 0 0.25rem;">Warmup / Recovery</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">50% - 60% HR Max</p>
+          <div style="font-size: 1.3rem; font-weight: 800; color: #059669; margin-top: 0.5rem;">100-120 BPM</div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #06b6d4;">
+          <span class="badge badge-blue">Zone 3</span>
+          <h4 style="margin: 0.5rem 0 0.25rem;">Aerobic Endurance</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">60% - 70% HR Max</p>
+          <div style="font-size: 1.3rem; font-weight: 800; color: #0891b2; margin-top: 0.5rem;">120-145 BPM</div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #f59e0b;">
+          <span class="badge badge-amber">Zone 4</span>
+          <h4 style="margin: 0.5rem 0 0.25rem;">Anaerobic Threshold</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">70% - 85% HR Max</p>
+          <div style="font-size: 1.3rem; font-weight: 800; color: #d97706; margin-top: 0.5rem;">145-165 BPM</div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #f43f5e;">
+          <span class="badge badge-rose">Zone 5</span>
+          <h4 style="margin: 0.5rem 0 0.25rem;">Peak HIIT Output</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">85% - 95% HR Max</p>
+          <div style="font-size: 1.3rem; font-weight: 800; color: #e11d48; margin-top: 0.5rem;">165+ BPM</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workout Routine Programs -->
+    <section class="container" style="padding: 1.5rem 1.5rem 4rem;">
+      <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+        <span class="section-tag">Program Catalog</span>
+        <h2 style="font-size: 1.8rem; font-weight: 800;">Targeted Workout Programs</h2>
+        <p style="color: var(--text-muted);">Select a routine matched to your available schedule and energy levels.</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Routine 1 -->
+        <article class="workout-card">
+          <div class="workout-banner" style="background: linear-gradient(135deg, #1e1b4b, #312e81);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span class="badge badge-purple">Flexibility & Core</span>
+              <div class="intensity-meter">
+                <span class="intensity-dot active"></span>
+                <span class="intensity-dot"></span>
+                <span class="intensity-dot"></span>
+              </div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.4rem; font-weight: 800;">Sunrise Yoga & Spinal Mobility</h3>
+              <p style="font-size: 0.85rem; color: #c7d2fe;">Ideal for mornings and sedentary computer posture.</p>
+            </div>
+          </div>
+          <div class="workout-body">
+            <div style="display: flex; gap: 1.5rem; font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+              <span>⏱️ Duration: <strong>18 Mins</strong></span>
+              <span>🔥 Est. Burn: <strong>95 Kcal</strong></span>
+              <span>🎯 Equipment: <strong>Yoga Mat</strong></span>
+            </div>
+
+            <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Core Sequence:</h4>
+            <div class="exercise-list">
+              <div class="exercise-item">
+                <span>Cat-Cow Spinal Flexion</span>
+                <strong>10 slow cycles</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Downward Dog to Plank Transition</span>
+                <strong>8 steady reps</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Low Lunge with Thoracic Twist</span>
+                <strong>45s each side</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Cobra Pose & Extended Child's Pose</span>
+                <strong>60s hold</strong>
+              </div>
+            </div>
+            <a href="planner.html" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 0.5rem;">Add to Today's Routine</a>
+          </div>
+        </article>
+
+        <!-- Routine 2 -->
+        <article class="workout-card">
+          <div class="workout-banner" style="background: linear-gradient(135deg, #881337, #be123c);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span class="badge badge-rose">Cardio Burn</span>
+              <div class="intensity-meter">
+                <span class="intensity-dot active"></span>
+                <span class="intensity-dot active"></span>
+                <span class="intensity-dot active"></span>
+              </div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.4rem; font-weight: 800;">20-Min Tabata High-Intensity Burn</h3>
+              <p style="font-size: 0.85rem; color: #fecdd3;">Full body calorie torch and VO2 max booster.</p>
+            </div>
+          </div>
+          <div class="workout-body">
+            <div style="display: flex; gap: 1.5rem; font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+              <span>⏱️ Duration: <strong>20 Mins</strong></span>
+              <span>🔥 Est. Burn: <strong>260 Kcal</strong></span>
+              <span>🎯 Equipment: <strong>None (Bodyweight)</strong></span>
+            </div>
+
+            <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Core Sequence:</h4>
+            <div class="exercise-list">
+              <div class="exercise-item">
+                <span>High Knees with Rapid Arms</span>
+                <strong>40s on / 20s rest</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Explosive Jump Squats</span>
+                <strong>40s on / 20s rest</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Mountain Climbers</span>
+                <strong>40s on / 20s rest</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Plyometric Burpees</span>
+                <strong>40s on / 20s rest</strong>
+              </div>
+            </div>
+            <a href="planner.html" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 0.5rem;">Add to Today's Routine</a>
+          </div>
+        </article>
+
+        <!-- Routine 3 -->
+        <article class="workout-card">
+          <div class="workout-banner" style="background: linear-gradient(135deg, #064e3b, #047857);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span class="badge badge-green">Hypertrophy & Tone</span>
+              <div class="intensity-meter">
+                <span class="intensity-dot active"></span>
+                <span class="intensity-dot active"></span>
+                <span class="intensity-dot"></span>
+              </div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.4rem; font-weight: 800;">Bodyweight Strength Calisthenics</h3>
+              <p style="font-size: 0.85rem; color: #a7f3d0;">Develop functional muscle without expensive gym memberships.</p>
+            </div>
+          </div>
+          <div class="workout-body">
+            <div style="display: flex; gap: 1.5rem; font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+              <span>⏱️ Duration: <strong>30 Mins</strong></span>
+              <span>🔥 Est. Burn: <strong>210 Kcal</strong></span>
+              <span>🎯 Equipment: <strong>Pullup Bar (Optional)</strong></span>
+            </div>
+
+            <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Core Sequence:</h4>
+            <div class="exercise-list">
+              <div class="exercise-item">
+                <span>Standard or Incline Pushups</span>
+                <strong>3 sets x 12-15 reps</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Tempo Bodyweight Squats (3s down)</span>
+                <strong>3 sets x 20 reps</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Walking Lunges</span>
+                <strong>3 sets x 10 reps / leg</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Forearm Plank Isometric Hold</span>
+                <strong>3 sets x 45 seconds</strong>
+              </div>
+            </div>
+            <a href="planner.html" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 0.5rem;">Add to Today's Routine</a>
+          </div>
+        </article>
+
+        <!-- Routine 4 -->
+        <article class="workout-card">
+          <div class="workout-banner" style="background: linear-gradient(135deg, #0e7490, #155e75);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span class="badge badge-blue">Desk Ergonomics</span>
+              <div class="intensity-meter">
+                <span class="intensity-dot active"></span>
+                <span class="intensity-dot"></span>
+                <span class="intensity-dot"></span>
+              </div>
+            </div>
+            <div>
+              <h3 style="font-size: 1.4rem; font-weight: 800;">Desk Break: 8-Min Posture Reset</h3>
+              <p style="font-size: 0.85rem; color: #bae6fd;">Relieve tech-neck, rounded shoulders, and tight hip flexors.</p>
+            </div>
+          </div>
+          <div class="workout-body">
+            <div style="display: flex; gap: 1.5rem; font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+              <span>⏱️ Duration: <strong>8 Mins</strong></span>
+              <span>🔥 Est. Burn: <strong>40 Kcal</strong></span>
+              <span>🎯 Equipment: <strong>Office Chair / Wall</strong></span>
+            </div>
+
+            <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Core Sequence:</h4>
+            <div class="exercise-list">
+              <div class="exercise-item">
+                <span>Chin Tucks & Gentle Neck Rolls</span>
+                <strong>60s gentle rotation</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Seated Spinal Twists</span>
+                <strong>30s each side</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Doorframe Chest & Bicep Opener</span>
+                <strong>45s hold</strong>
+              </div>
+              <div class="exercise-item">
+                <span>Standing Quad & Hip Flexor Stretch</span>
+                <strong>45s each leg</strong>
+              </div>
+            </div>
+            <a href="planner.html" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 0.5rem;">Add to Today's Routine</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Workout Recovery Principles -->
+    <section class="container" style="padding-bottom: 5rem;">
+      <div class="card" style="border: 2px dashed #cbd5e1; background-color: #ffffff;">
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">
+          💡 Golden Rules for Safe & Effective Training
+        </h3>
+        <div class="grid-3">
+          <div>
+            <h4 style="font-size: 1rem; color: var(--primary-dark); margin-bottom: 0.35rem;">1. Progressive Overload</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              Gradually increase reps, time under tension, or decrease rest periods to stimulate ongoing adaptations.
+            </p>
+          </div>
+          <div>
+            <h4 style="font-size: 1rem; color: var(--primary-dark); margin-bottom: 0.35rem;">2. Adequate Hydration</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              Drink 500ml of water 30 minutes prior to workouts to prevent cramping and maintain intracellular fluid balance.
+            </p>
+          </div>
+          <div>
+            <h4 style="font-size: 1rem; color: var(--primary-dark); margin-bottom: 0.35rem;">3. Respect Rest Days</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">
+              Muscles grow and repair during sleep and active recovery, not during the workout itself.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #ffffff;">
+            <div class="logo-icon">🌿</div>
+            <div>Vitality<span>Pulse</span></div>
+          </div>
+          <p>
+            Evidence-based fitness training guides, posture relief, and daily activity tracking for everyday wellness.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Sections</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="nutrition.html">Nutrition & Diets</a></li>
+            <li><a href="fitness.html">Fitness & Workouts</a></li>
+            <li><a href="wellness.html">Mental Wellness & Sleep</a></li>
+            <li><a href="planner.html">Daily Planner & Goals</a></li>
+            <li><a href="contact.html">FAQ & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admin Portal</h4>
+          <ul class="footer-links">
+            <li><a href="admin/index.html">Admin Dashboard</a></li>
+            <li><a href="admin/fitness-manage.html">Manage Workouts</a></li>
+            <li><a href="admin/nutrition-manage.html">Manage Nutrition</a></li>
+            <li><a href="admin/users.html">User Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Safety Disclaimer</h4>
+          <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.6;">
+            Perform all exercises in a safe environment. Discontinue immediately if you experience dizziness or acute pain.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Personal Wellness Dashboard. Responsive Web Technology Project.</p>
+        <p><a href="admin/fitness-manage.html" style="color: var(--primary);">Go to Admin Fitness Database →</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

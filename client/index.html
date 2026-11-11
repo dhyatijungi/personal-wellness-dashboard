@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Wellness Dashboard | Responsive Health & Lifestyle Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/client.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon">🌿</div>
+        <div>Vitality<span>Pulse</span></div>
+      </a>
+
+      <!-- CSS Checkbox Toggle for Mobile Navigation -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="nutrition.html" class="nav-link">Nutrition</a></li>
+          <li><a href="fitness.html" class="nav-link">Fitness</a></li>
+          <li><a href="wellness.html" class="nav-link">Mental Wellness</a></li>
+          <li><a href="planner.html" class="nav-link">Daily Planner</a></li>
+          <li><a href="contact.html" class="nav-link">FAQ & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="admin/index.html" class="admin-switch-btn" title="Open Administrator Control Panel">
+          <span>⚙️</span> Admin Portal
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-tag">Empower Your Daily Health</span>
+          <h1>Your Personal Gateway to <span class="gradient-text">Balanced Living</span></h1>
+          <p class="hero-description">
+            A comprehensive, all-in-one health and lifestyle platform designed to harmonize nutrition,
+            fitness routines, deep sleep cycles, mindfulness, and daily habit tracking into one intuitive dashboard.
+          </p>
+          <div class="hero-actions">
+            <a href="planner.html" class="btn btn-primary">Start Daily Plan →</a>
+            <a href="nutrition.html" class="btn btn-outline">Explore Nutrition</a>
+          </div>
+        </div>
+
+        <!-- Wellness Snapshot Widget -->
+        <div class="hero-widget-card">
+          <div class="widget-header">
+            <div class="widget-title">
+              <span>📊</span> Today's Vitality Score
+            </div>
+            <span class="badge badge-green">Optimal</span>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="mini-stat-card">
+              <div class="stat-val">8,450</div>
+              <div class="stat-label">Steps (85%)</div>
+            </div>
+            <div class="mini-stat-card">
+              <div class="stat-val">2.2 L</div>
+              <div class="stat-label">Hydration</div>
+            </div>
+            <div class="mini-stat-card">
+              <div class="stat-val">7.8 h</div>
+              <div class="stat-label">Rest Sleep</div>
+            </div>
+          </div>
+
+          <div class="gauge-container">
+            <div class="circular-gauge" title="82% Wellness Target Achieved"></div>
+            <div class="gauge-info">
+              <h4>Daily Habit Mastery: 82%</h4>
+              <p>You have met your hydration and morning cardio targets. Evening meditation remains!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wellness Pillars Section -->
+    <section class="pillars-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Holistic Health</span>
+          <h2 class="section-title">Core Pillars of Personal Wellness</h2>
+          <p class="section-subtitle">
+            Explore dedicated guides crafted to improve your physical resilience, dietary balance, and mental clarity.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Pillar 1: Nutrition -->
+          <article class="pillar-card">
+            <div class="pillar-icon-box icon-nutrition">🥗</div>
+            <span class="badge badge-amber" style="width: fit-content; margin-bottom: 0.75rem;">Wholesome Fuel</span>
+            <h3>Nutritional Balance</h3>
+            <p>
+              Discover science-backed meal plans, macro splits, antioxidant-rich smoothies, and mindful portion guidelines.
+            </p>
+            <a href="nutrition.html" class="pillar-link">Browse Meal Guides →</a>
+          </article>
+
+          <!-- Pillar 2: Fitness -->
+          <article class="pillar-card">
+            <div class="pillar-icon-box icon-fitness">⚡</div>
+            <span class="badge badge-rose" style="width: fit-content; margin-bottom: 0.75rem;">Active Strength</span>
+            <h3>Dynamic Fitness</h3>
+            <p>
+              Tailored workout routines ranging from low-impact mobility yoga to high-intensity cardiovascular strength sets.
+            </p>
+            <a href="fitness.html" class="pillar-link">View Workout Routines →</a>
+          </article>
+
+          <!-- Pillar 3: Sleep & Rest -->
+          <article class="pillar-card">
+            <div class="pillar-icon-box icon-sleep">🌙</div>
+            <span class="badge badge-purple" style="width: fit-content; margin-bottom: 0.75rem;">Circadian Rhythm</span>
+            <h3>Sleep & Recovery</h3>
+            <p>
+              Master sleep hygiene, calculate restorative 90-minute REM cycles, and adopt evening wind-down rituals.
+            </p>
+            <a href="wellness.html" class="pillar-link">Explore Sleep Cycles →</a>
+          </article>
+
+          <!-- Pillar 4: Mental Clarity -->
+          <article class="pillar-card">
+            <div class="pillar-icon-box icon-mind">🧘</div>
+            <span class="badge badge-blue" style="width: fit-content; margin-bottom: 0.75rem;">Mindfulness</span>
+            <h3>Mental Resilience</h3>
+            <p>
+              Interactive breathing visualizer, grounding techniques, and positive cognitive habits to alleviate stress.
+            </p>
+            <a href="wellness.html" class="pillar-link">Try Guided Breathing →</a>
+          </article>
+
+          <!-- Pillar 5: Daily Planner -->
+          <article class="pillar-card">
+            <div class="pillar-icon-box icon-planner">📅</div>
+            <span class="badge badge-green" style="width: fit-content; margin-bottom: 0.75rem;">Productive Focus</span>
+            <h3>Daily Routine Planner</h3>
+            <p>
+              Structure your hours with timed blocks for deep work, wellness breaks, exercise, and balanced family time.
+            </p>
+            <a href="planner.html" class="pillar-link">Plan Your Day →</a>
+          </article>
+
+          <!-- Pillar 6: Habit Streaks -->
+          <article class="pillar-card">
+            <div class="pillar-icon-box icon-habits">🎯</div>
+            <span class="badge" style="background:#e0e7ff; color:#4338ca; width: fit-content; margin-bottom: 0.75rem;">Consistency</span>
+            <h3>Habit Building</h3>
+            <p>
+              Track micro-commitments such as drinking 8 glasses of water, 10-minute sunshine walks, and screen-free bedtimes.
+            </p>
+            <a href="planner.html#habits" class="pillar-link">Track Your Habits →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wellness Banner & Quote -->
+    <section style="background-color: var(--bg-main); padding: 3rem 0; border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="card" style="background: linear-gradient(135deg, #065f46, #047857); color: #ffffff; padding: 2.5rem; text-align: center; border: none;">
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">
+            "Physical fitness is the first requisite of happiness."
+          </h3>
+          <p style="color: #a7f3d0; font-size: 1rem; max-width: 600px; margin: 0 auto 1.5rem;">
+            Small sustainable actions repeated daily yield monumental health transformations over time.
+          </p>
+          <a href="planner.html" class="btn" style="background-color: #ffffff; color: #065f46; font-weight: 700;">
+            Set Today's Milestone
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #ffffff;">
+            <div class="logo-icon">🌿</div>
+            <div>Vitality<span>Pulse</span></div>
+          </div>
+          <p>
+            Personal Wellness Dashboard is a responsive academic web project built for Web Technology demonstrating semantic HTML5 and modern CSS3 layouts.
+          </p>
+          <span class="badge badge-green">Pure HTML5 & CSS3</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Sections</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="nutrition.html">Nutrition & Diets</a></li>
+            <li><a href="fitness.html">Fitness & Workouts</a></li>
+            <li><a href="wellness.html">Mental Wellness & Sleep</a></li>
+            <li><a href="planner.html">Daily Planner & Goals</a></li>
+            <li><a href="contact.html">FAQ & Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admin Portal</h4>
+          <ul class="footer-links">
+            <li><a href="admin/index.html">Admin Dashboard</a></li>
+            <li><a href="admin/users.html">User Directory</a></li>
+            <li><a href="admin/nutrition-manage.html">Manage Nutrition</a></li>
+            <li><a href="admin/fitness-manage.html">Manage Workouts</a></li>
+            <li><a href="admin/tips-manage.html">Health Tips & Articles</a></li>
+            <li><a href="admin/feedback.html">Inquiries & Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Subject Details</h4>
+          <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.6;">
+            <strong>Course:</strong> Web Technology<br>
+            <strong>Standard:</strong> HTML5 & CSS3 Only<br>
+            <strong>Responsive:</strong> Flexbox & CSS Grid<br>
+            <strong>Theme:</strong> Health, Nutrition, & Wellness
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Personal Wellness Dashboard. Academic Project Submission.</p>
+        <p>Built with Pure Semantic HTML5 and Modular CSS3.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
